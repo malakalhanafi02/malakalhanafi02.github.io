@@ -502,12 +502,28 @@
     "eyebrow": "Fault-aware cooperative sensing and trust",
     "category": "kaust",
     "year": "2026–present",
-    "summary": "I’m currently mapping how fault diagnosis, robust aggregation, and trust-aware cooperation fit together, considering differences between sensors and practical communication and computing limits.",
+    "summary": "I am researching how cooperative autonomous vehicles can share and combine sensor information reliably when some measurements are faulty or compromised. My work explores how differences between sensors, uncertainty, and unreliable contributions affect cooperation and decision-making across vehicles.",
     "role": "Research formulation, literature review, system modeling, and evaluation planning",
     "status": "Ongoing research · more on this soon",
-    "tools": [],
+    "tools": [
+      "Cooperative sensing",
+      "Sensor fault diagnosis",
+      "Robust aggregation",
+      "Trust-aware coordination",
+      "Multi-agent systems",
+      "Heterogeneous sensing"
+    ],
     "color": "paper",
-    "sections": [],
+    "sections": [
+      {
+        "title": "Research approach",
+        "text": "I am reviewing and comparing published approaches to fault diagnosis, robust aggregation, and trust-aware cooperation, and formalizing how these components could fit into an overall system model."
+      },
+      {
+        "title": "Evaluation planning",
+        "text": "Alongside this, I am defining evaluation plans to study reliability and security, while considering practical communication and computation limits."
+      }
+    ],
     "id": "P08",
     "kaust": true,
     "gallery": [],

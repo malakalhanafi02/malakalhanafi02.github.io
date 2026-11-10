@@ -26,6 +26,6 @@ export const credentials:Credential[]=[
  {id:'C9',title:'Emergency Incident Preparedness',issuer:'KAUST',date:'July 2023',group:'kaust',image:'/credentials/C9.webp'},
  {id:'C10',title:'Dean’s Honour List',issuer:'Western University · Faculty of Engineering',date:'2023–2024',group:'honours',image:'/credentials/C10.webp'},
  {id:'C14',title:'Dean’s Honour List',issuer:'Western University · Faculty of Engineering',date:'2024–2025',group:'honours',image:'/credentials/C14.webp'},
- {id:'C12',title:'Engineering Design Day — Honourable Mention',issuer:'Western University · team capstone',date:'2026',group:'honours',placeholder:'Award and Engineering Design Day photographs to be added'},
+ {id:'C12',title:'Engineering Design Day — Honourable Mention',issuer:'Western University · team capstone',date:'2026',group:'honours',image:'/gallery/mower-honourable-mention.webp'},
  {id:'C13',title:'Best Engineer Intern',issuer:'Smart Methods',date:'2024',group:'honours',placeholder:'Award photograph to be added'},
 ];

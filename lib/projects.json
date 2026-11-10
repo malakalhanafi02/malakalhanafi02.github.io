@@ -90,6 +90,10 @@
         "src": "/gallery/mower-coverage.webp",
         "caption": "Recorded coverage-planning visualization in the simulated yard.",
         "kind": "image"
+      },
+      {
+        "src": "/gallery/mower-honourable-mention.webp",
+        "caption": "Our autonomous lawn mower team receiving an Honourable Mention at Engineering Design Day."
       }
     ],
     "demo": "mower",
@@ -131,6 +135,10 @@
     "kaust": false,
     "gallery": [
       {
+        "src": "/gallery/carm-presentation.webp",
+        "caption": "Our team presenting the miniature C-arm simulator."
+      },
+      {
         "src": "/gallery/carm-prototype.webp",
         "caption": "The C-arm simulator prototype during a classroom demonstration.",
         "kind": "image"
@@ -146,8 +154,8 @@
         "kind": "image"
       }
     ],
-    "image": "/gallery/carm-prototype.webp",
-    "imageAlt": "The C-arm simulator prototype during a classroom demonstration.",
+    "image": "/gallery/carm-presentation.webp",
+    "imageAlt": "Our team presenting the miniature C-arm simulator.",
     "featured": true
   },
   {
@@ -186,6 +194,10 @@
     "kaust": false,
     "gallery": [
       {
+        "src": "/gallery/wheelchair-barcode-demo.webp",
+        "caption": "Our wheelchair-navigation team with the robot and barcode checkpoint setup."
+      },
+      {
         "src": "/gallery/wheelchair-map.webp",
         "caption": "A recorded occupancy map from the navigation work.",
         "kind": "image"
@@ -206,8 +218,8 @@
         "kind": "image"
       }
     ],
-    "image": "/gallery/wheelchair-map.webp",
-    "imageAlt": "A recorded occupancy map from the navigation work.",
+    "image": "/gallery/wheelchair-barcode-demo.webp",
+    "imageAlt": "Our wheelchair-navigation team with the robot and barcode checkpoint setup.",
     "featured": true
   },
   {
@@ -937,47 +949,6 @@
       {
         "label": "Download original presentation (PowerPoint)",
         "href": "/assets/AutoPicker-Presentation.pptx"
-      }
-    ]
-  },
-  {
-    "slug": "engineering-leadership",
-    "title": "Engineering leadership, ethics and design-thinking work",
-    "eyebrow": "Engineering leadership, ethics and design-thinking work",
-    "category": "leadership",
-    "year": "2022–2026",
-    "summary": "A multi-year stream in entrepreneurship, human-centered design, consulting, ethics, and engineering leadership.",
-    "role": "Engineering Leadership and Innovation Certificate · Western",
-    "status": "Certificate coursework",
-    "tools": [
-      "User research",
-      "Design thinking",
-      "Technical communication",
-      "Ethics",
-      "Strategy"
-    ],
-    "color": "paper",
-    "sections": [
-      {
-        "title": "The coursework",
-        "text": "The certificate stream brought together venture creation, human-centered design, business strategy, engineering ethics, and leadership. Work includes opportunity reports, user-interview synthesis, case analysis, and reflective writing."
-      }
-    ],
-    "id": "P40",
-    "kaust": false,
-    "gallery": [
-      {
-        "src": "/gallery/leadership-fax.webp",
-        "caption": "Original team presentation slide defining communication problems in healthcare prescription workflows."
-      }
-    ],
-    "featured": true,
-    "image": "/gallery/leadership-fax.webp",
-    "imageAlt": "Original team presentation slide defining communication problems in healthcare prescription workflows.",
-    "links": [
-      {
-        "label": "Open presentation preview",
-        "href": "/gallery/leadership-fax.webp"
       }
     ]
   },

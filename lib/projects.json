@@ -302,7 +302,11 @@
       },
       {
         "title": "The work",
-        "text": "The project folder contains the final report, appendix, design analysis, and presentation materials. The work connects device architecture and practical implementation constraints with the intended use setting."
+        "text": "I translated the treatment and usability needs into engineering requirements, then compared concepts for delivering blue light across a flexible treatment surface. My selected layout separates the LED source and driver from the fiber-optic pad, aiming to keep heat-producing electronics away from the infant while distributing light through the blanket. I developed the SolidWorks assembly and considered how the optical fibers, enclosure, power supply and control electronics could fit together in a portable design."
+      },
+      {
+        "title": "Power, light and thermal design",
+        "text": "I evaluated blue COB5730 LEDs with CN5711 constant-current drivers and PWM dimming, and used optical power budgeting and runtime calculations to relate the proposed source to the treatment area and battery capacity. Thermal analysis informed the separation of the LED engine from the patient-contacting pad. These calculations guided a proposed device architecture; the blanket was a design study, not a manufactured or clinically tested treatment device."
       },
       {
         "title": "Scope",
@@ -463,7 +467,7 @@
     ],
     "sections": [
       {
-        "title": "Why I built a finger",
+        "title": "Project objective and design context",
         "text": "I wanted to connect a muscle-control signal to a mechanism that could reproduce finger movement. Building on my earlier surface electromyography (sEMG) circuit, which measured electrical activity from forearm muscles, I explored how a compact actuator could generate tendon-like motion for prosthetic and wearable robotic devices. I designed a printed finger to test how a small tendon pull could create curling and return motion."
       },
       {
@@ -1076,10 +1080,6 @@
     "color": "paper",
     "gallery": [
       {
-        "src": "/gallery/farmerconnect-slides.webp",
-        "caption": "Title slide from the original FarmerConnect business-plan presentation."
-      },
-      {
         "src": "/gallery/farmerconnect-app-1.webp",
         "caption": "Original FarmerConnect app homepage mockup."
       },
@@ -1114,12 +1114,7 @@
     "featured": true,
     "image": "/gallery/farmerconnect-concept.webp",
     "imageAlt": "Concept illustration for FarmerConnect business plan.",
-    "links": [
-      {
-        "label": "Open presentation preview",
-        "href": "/gallery/farmerconnect-slides.webp"
-      }
-    ],
+    "links": [],
     "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
   },
   {
@@ -1133,12 +1128,7 @@
     "status": "Consulting study",
     "role": "Team consulting project · with Elijah Cook",
     "color": "paper",
-    "gallery": [
-      {
-        "src": "/gallery/autopicker-slides.webp",
-        "caption": "Original AutoPicker consulting presentation title slide."
-      }
-    ],
+    "gallery": [],
     "summary": "A team consulting presentation applying SWOT and external-market analysis to AutoPicker’s vehicle-service business proposition.",
     "tools": [
       "Microsoft PowerPoint",
@@ -1252,13 +1242,29 @@
         "text": "My internship work covered SolidWorks robot-component design, STL preparation, 3D printing, servo mechanisms and control-circuit prototyping. The software work included Python / OpenCV vision interfaces, JavaScript web interfaces and a speech-to-text prototype. The page combines the original fabrication, simulation and interface material from these activities. Supplied training decks and upstream example packages are reference material, so their complete technology stacks are not presented as tools I independently implemented."
       }
     ],
-    "image": "/gallery/smart-methods-robot.webp",
-    "imageAlt": "Printed and servo-actuated robot components from internship work.",
+    "image": "/gallery/smart-methods-award-portrait.webp",
+    "imageAlt": "Malak holding her Smart Methods certificate and recognition awards.",
     "featured": true,
     "links": [
       {
         "label": "Smart Methods",
         "href": "https://www.s-m.com.sa/en/index.html"
+      },
+      {
+        "label": "3D-printed robot legs · GitHub",
+        "href": "https://github.com/malakalhanafi02/3DPrinted-RobotLegs"
+      },
+      {
+        "label": "ESP32 servo-control interface · GitHub",
+        "href": "https://github.com/malakalhanafi02/ServoControlUI"
+      },
+      {
+        "label": "HuskyLens vision and Arduino LED prototype · GitHub",
+        "href": "https://github.com/malakalhanafi02/HuskyLens_LED"
+      },
+      {
+        "label": "Speech-to-text web interface · GitHub",
+        "href": "https://github.com/malakalhanafi02/speech-to-text"
       }
     ],
     "activities": [

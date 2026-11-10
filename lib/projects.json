@@ -5,7 +5,7 @@
     "eyebrow": "Autonomous lawn mower",
     "category": "robotics",
     "year": "2026",
-    "summary": "A ROS-based autonomous mower combining YOLOv8 perception, LiDAR mapping, localization, coverage planning, motion control, and safety checks; my work spanned perception and autonomy integration.",
+    "summary": "An autonomous mower prototype integrating a four-wheel differential-drive platform, camera and LiDAR sensing, ROS navigation, coverage planning, motor control, and safety logic.",
     "role": "AI & perception lead · mapping, planning and autonomy integration",
     "status": "Capstone completed",
     "tools": [
@@ -31,7 +31,18 @@
       "A* path planning",
       "Coverage planning",
       "URDF",
-      "Git"
+      "Git",
+      "SolidWorks",
+      "3D-printed ABS chassis",
+      "Cycloidal gearboxes",
+      "BLDC motors",
+      "Motor drivers",
+      "6S10P lithium-ion battery",
+      "Battery management system (BMS)",
+      "Ultrasonic sensors",
+      "IMU",
+      "Breadboard prototyping",
+      "Wiring and connectors"
     ],
     "color": "paper",
     "image": "/gallery/mower-prototype.webp",
@@ -57,11 +68,11 @@
       },
       {
         "title": "My contribution",
-        "text": "I led AI perception development: preparing image data, training and evaluating YOLOv8 detection and segmentation models, and connecting perception outputs with the wider robotic system. My contribution also extended to LiDAR mapping, localization, coverage planning, motion control, and safety checks, working with the team to connect these parts of the autonomy stack. Lawn, boundary, and barrier masks supported cut/no-cut reasoning, while object detections identified obstacles."
+        "text": "AI perception work included preparing image data, training and evaluating YOLOv8 detection and segmentation models, and connecting their outputs to the wider robot. Malak also contributed to the team’s LiDAR mapping, localization, coverage planning, motion control, and safety integration. Lawn, boundary, and barrier masks supported cut/no-cut reasoning; object detections identified obstacles."
       },
       {
         "title": "How the system fits together",
-        "text": "I worked with the team to combine vision with LiDAR mapping, localization, coverage planning, motion control, and safety checks. ROS nodes exchange perception and navigation information, while Gazebo and RViz support staged simulation and visualization. The project includes both ROS 1 and ROS 2 development artifacts; the documented final report describes the ROS 1 pipeline."
+        "text": "The four-wheel differential-drive chassis used 3D-printed ABS parts, brushless motors with cycloidal gear reduction, and a reel-based cutting assembly. A lithium-ion battery and battery management system powered a modular electronics bay carrying motor drivers, cooling hardware, a Jetson Nano, and an Arduino Mega. Breadboard tests, wiring, connectors, and controller-to-sensor connections brought the electrical subsystems together. The Jetson ran high-level ROS autonomy while the Arduino handled low-level motor and sensor interfaces. Camera, LiDAR, ultrasonic, and inertial data fed mapping, localization, obstacle handling, coverage planning, and cutter safety logic; Gazebo and RViz supported staged simulation and inspection."
       },
       {
         "title": "Results and limits",
@@ -69,7 +80,7 @@
       },
       {
         "title": "Perception, simulation and integration",
-        "text": "I prepared and labeled vision data in Roboflow and trained Ultralytics YOLOv8 detection and segmentation models with PyTorch. Python and OpenCV supported image processing and the ROS perception interfaces. I also contributed to connecting occupancy-grid mapping, sensor fusion, coverage planning, motion control and safety checks in the team’s ROS pipeline; Gazebo and RViz provided simulation and visualization. The repository contains ROS 1 Noetic and ROS 2 development artifacts, while the documented final pipeline uses ROS 1. The browser demonstration runs the exported ONNX segmentation model. The hardware architecture pairs a Jetson Nano with an Arduino Mega; individual model validation and simulation results are distinct from complete outdoor robot validation."
+        "text": "Vision data were prepared in Roboflow and used to train Ultralytics YOLOv8 detection and segmentation models with PyTorch. Python and OpenCV supported image processing and ROS perception interfaces. Occupancy-grid mapping, sensor fusion, coverage planning, motion control, and safety checks formed the team’s autonomy pipeline. The browser demonstration runs an exported ONNX segmentation model. Model validation and simulation results are separate from complete outdoor robot validation."
       }
     ],
     "links": [
@@ -277,7 +288,7 @@
     "eyebrow": "Neonatal phototherapy blanket",
     "category": "biomedical",
     "year": "2026",
-    "summary": "A SolidWorks medical-device design study combining fiber-optic light delivery, LED-driver selection, thermal analysis, and optical power budgeting.",
+    "summary": "A proposed portable blue-light blanket for neonatal jaundice, designed around a flexible fiber-optic pad, separate LED engine, battery power, and low-resource care requirements.",
     "role": "Medical and assistive devices project · MME 4470",
     "status": "Design study",
     "tools": [
@@ -298,23 +309,23 @@
     "sections": [
       {
         "title": "The design question",
-        "text": "How could a phototherapy blanket be designed with affordability and the realities of resource-constrained care in mind? The course project develops the requirements and engineering rationale for a proposed device."
+        "text": "How could neonatal phototherapy be delivered in a portable, affordable form for clinics with limited equipment? The project compared existing approaches on cost, power, portability, and caregiver needs, then translated those gaps into requirements for a blue-light blanket."
       },
       {
         "title": "The work",
-        "text": "I translated the treatment and usability needs into engineering requirements, then compared concepts for delivering blue light across a flexible treatment surface. My selected layout separates the LED source and driver from the fiber-optic pad, aiming to keep heat-producing electronics away from the infant while distributing light through the blanket. I developed the SolidWorks assembly and considered how the optical fibers, enclosure, power supply and control electronics could fit together in a portable design."
+        "text": "The proposed device routes blue light from an LED engine through optical fibers to a flexible pad that can sit close to the infant. Keeping the light source, driver, and battery outside the patient-contacting pad helps manage heat. SolidWorks models show the layered pad, enclosure, fiber routing, power supply, and control electronics as one portable assembly."
       },
       {
         "title": "Power, light and thermal design",
-        "text": "I evaluated blue COB5730 LEDs with CN5711 constant-current drivers and PWM dimming, and used optical power budgeting and runtime calculations to relate the proposed source to the treatment area and battery capacity. Thermal analysis informed the separation of the LED engine from the patient-contacting pad. These calculations guided a proposed device architecture; the blanket was a design study, not a manufactured or clinically tested treatment device."
+        "text": "The design compared blue COB5730 LEDs with CN5711 constant-current drivers and PWM dimming. Optical power budgeting related the source output to the treatment area, while battery calculations estimated runtime. Thermal analysis informed the physical separation of the LED engine and infant-facing pad. A bill of materials was developed for the proposed low-cost configuration."
       },
       {
         "title": "Scope",
-        "text": "This is a student design study. It is not a clinically validated device, and the portfolio does not claim a treatment outcome."
+        "text": "The result is an engineering design and analysis package: CAD assemblies, component selection, optical and power calculations, thermal considerations, and a bill of materials. The concept would need fabrication and clinical evaluation before use in care."
       },
       {
         "title": "Design tools and proposed hardware",
-        "text": "This was a medical-device design study supported by SolidWorks CAD, requirements analysis, Quality Function Deployment and a weighted concept-selection matrix. The selected concept separated a blue-LED engine from a fiber-optic treatment pad to reduce direct heat exposure. The proposed electronics used COB5730 LEDs, CN5711 constant-current PWM drivers and an 18650 battery supply. Optical power budgeting, runtime calculations and thermal analysis informed the design. These components describe the proposed architecture and engineering analysis, rather than a clinically validated or manufactured device."
+        "text": "SolidWorks CAD, Quality Function Deployment, a weighted concept-selection matrix, optical power budgeting, battery runtime calculations, and thermal analysis supported the design. Proposed hardware included blue COB5730 LEDs, CN5711 constant-current drivers with PWM control, an 18650 battery supply, and a fiber-optic treatment pad."
       }
     ],
     "id": "P05",
@@ -356,7 +367,7 @@
       "ESP32-S3",
       "Arduino C++",
       "Arduino IDE",
-      "MSE2202_Lib",
+      "Course motor-control library (MSE2202)",
       "PID control",
       "Quadrature encoders",
       "Adafruit TCS34725",
@@ -386,7 +397,7 @@
       },
       {
         "title": "Mechanics, sensing and embedded control",
-        "text": "The rover combined SolidWorks-designed and 3D-printed pickup and sorting mechanisms with ESP32-S3 Arduino C++ firmware. The MSE2202 library supported motor control and encoder feedback; PID control addressed wheel positioning. A TCS34725 color sensor distinguished gems inside a light-isolated sorting chamber, with servo-actuated collection and sorting hardware. Infrared-beacon homing and wheel traction were practical limitations during testing. This was a team build spanning mechanical design, sensor integration and embedded control."
+        "text": "The rover combined SolidWorks-designed and 3D-printed pickup and sorting mechanisms with ESP32-S3 firmware written in Arduino C++. A course-provided motor-control library handled the motors and encoder feedback, while PID control supported wheel positioning. A TCS34725 color sensor classified gems in a light-isolated sorting chamber, and servos operated the collection and sorting mechanisms. Infrared-beacon homing and wheel traction limited return-to-base reliability during testing."
       }
     ],
     "id": "P06",
@@ -468,23 +479,23 @@
     "sections": [
       {
         "title": "Project objective and design context",
-        "text": "I wanted to connect a muscle-control signal to a mechanism that could reproduce finger movement. Building on my earlier surface electromyography (sEMG) circuit, which measured electrical activity from forearm muscles, I explored how a compact actuator could generate tendon-like motion for prosthetic and wearable robotic devices. I designed a printed finger to test how a small tendon pull could create curling and return motion."
+        "text": "The project connected a forearm muscle-control signal to a mechanism that could reproduce finger movement. It built on an earlier surface electromyography (sEMG) circuit that measured muscle activity, then explored how a compact actuator could generate tendon-like motion for prosthetic and wearable robotic devices. A printed finger provided a way to test curling and return motion from a small tendon pull."
       },
       {
         "title": "How shape-memory alloy creates movement",
-        "text": "SMA stands for shape-memory alloy. I used thin nickel-titanium wire that contracts when heated by electrical current. Removing power lets it cool, while an opposing restoring force supports recovery. That contraction can pull a tendon like an artificial muscle. The small available movement and the time needed for heating and cooling shaped both the circuit and the mechanism design."
+        "text": "SMA stands for shape-memory alloy. Thin nickel-titanium wire contracts when heated by electrical current and cools after power is removed; an opposing restoring force supports recovery. That contraction can pull a tendon like an artificial muscle. Limited travel and heating and cooling time shaped the circuit and mechanism design."
       },
       {
         "title": "Connecting muscle signals to actuation",
-        "text": "Working with my project partners, I built and tested a breadboard driver using a 555 timer oscillator, an IRLD024 MOSFET and a 1N4007 diode. Its on/off cycle gave the bendable SMA actuator time to heat and cool. I then connected the processed muscle signal from my earlier sEMG work: an INA126 instrumentation amplifier, high-pass and low-pass filters, and a precision rectifier. A forearm contraction raised the signal enough to switch current through the SMA actuator; relaxing the muscle removed the trigger."
+        "text": "A breadboard driver using a 555 timer oscillator, IRLD024 MOSFET, and 1N4007 diode controlled the SMA actuator’s heating and cooling cycle. The earlier sEMG circuit used an INA126 instrumentation amplifier, high-pass and low-pass filters, and a precision rectifier. Forearm contraction raised the processed signal enough to switch current through the actuator; relaxation removed the trigger."
       },
       {
         "title": "Designing the tendon-driven mechanism",
-        "text": "I modelled the three-link finger in SolidWorks, exported an STL file and fabricated the part by 3D printing. Its three segments represent the bones of an index finger, with thinner flexure regions at the joints and a tendon routed along the bending side. Pulling the tendon curled the finger; releasing it let the printed flexures restore a straighter shape. I used this mechanism to test how a small pull could produce useful joint motion."
+        "text": "The three-link finger was modeled in SolidWorks, exported as an STL, and 3D printed. Its segments represent the bones of an index finger, with flexible joint regions and a tendon along the bending side. Pulling the tendon curled the finger; releasing it let the printed flexures restore a straighter shape."
       },
       {
-        "title": "What I demonstrated",
-        "text": "I tested the electrical SMA actuator and the printed finger as separate parts of the project. In the finger video, I pull the tendon manually to simulate SMA contraction. The muscle-triggered bendable SMA actuator was tested separately. Together, the work connected biosignal conditioning, thermal actuator control and prosthetic mechanism design, and showed how cooling time and limited actuator travel constrain movement."
+        "title": "Demonstration and findings",
+        "text": "The electrical SMA actuator and printed finger were tested as separate parts of the project. In the recorded finger demonstration, the tendon is pulled manually to simulate SMA contraction; the muscle-triggered SMA actuator was tested separately. The experiments connected biosignal conditioning, thermal actuator control, and prosthetic mechanism design while exposing limits from cooling time and actuator travel."
       }
     ],
     "image": "/gallery/finger-prototype.webp",
@@ -498,8 +509,8 @@
   },
   {
     "slug": "fault-aware-cooperation",
-    "title": "Fault-aware cooperative sensing and trust",
-    "eyebrow": "Fault-aware cooperative sensing and trust",
+    "title": "Autonomous Vehicles: Fault-Aware Sensing and Trust",
+    "eyebrow": "Autonomous Vehicles: Fault-Aware Sensing and Trust",
     "category": "kaust",
     "year": "2026–present",
     "summary": "I am researching how cooperative autonomous vehicles can share and combine sensor information reliably when some measurements are faulty or compromised. My work explores how differences between sensors, uncertainty, and unreliable contributions affect cooperation and decision-making across vehicles.",
@@ -683,8 +694,8 @@
         "text": "Minute-level electricity measurements contain temporal structure, missing values, and relationships between aggregate and sub-metered consumption. A useful model needs careful data preparation as well as a suitable architecture."
       },
       {
-        "title": "My contribution",
-        "text": "I worked on preprocessing, Power Factor and Global Active Energy features, and the LSTM architecture and tuning. The final group model used two 128-unit LSTM layers with a dense prediction head and a 256-step input window."
+        "title": "Forecasting workflow",
+        "text": "The forecasting workflow prepared time-indexed household electricity data, engineered Power Factor and Global Active Energy features, and trained an LSTM model. The final group model used two 128-unit LSTM layers, a dense prediction head, and a 256-step input window."
       },
       {
         "title": "Results in context",
@@ -692,7 +703,7 @@
       },
       {
         "title": "Data preparation and sequence-model development",
-        "text": "I worked on preprocessing and engineered features for the group’s household electricity forecasting project. pandas and NumPy supported time-indexed data preparation and calculations such as power factor and global active energy. TensorFlow / Keras implemented sliding-window LSTM models with Dense layers and dropout, trained in Google Colab. We iterated on window length and network structure, then compared predictions and training/validation behavior using MSE, MAE and R-squared. scikit-learn supported the surrounding preprocessing and evaluation workflow."
+        "text": "pandas and NumPy supported time-indexed data preparation and features such as power factor and global active energy. TensorFlow/Keras implemented sliding-window LSTM models with Dense layers and dropout in Google Colab. Window length and network structure were compared using training and validation behavior, MSE, MAE, and R-squared; scikit-learn supported preprocessing and evaluation."
       }
     ],
     "id": "P11",
@@ -758,11 +769,11 @@
       },
       {
         "title": "Fairness and privacy investigations",
-        "text": "I examined classification disparities in COMPAS data, explored fairness interventions, built causal-analysis exercises, and tested differentially private regression models. These investigations connect evaluation choices with explicit assumptions about fairness and privacy."
+        "text": "The investigations examined classification disparities in COMPAS data, fairness interventions, causal-analysis exercises, and differentially private regression. Each comparison made the assumptions behind fairness and privacy metrics explicit."
       },
       {
         "title": "Libraries and analysis workflow",
-        "text": "I used pandas / NumPy and scikit-learn for data preparation, classification and evaluation, with Matplotlib for result plots. AIF360 and fairlearn supported group-fairness metrics and mitigation experiments, including Exponentiated Gradient Reduction and adversarial debiasing with TensorFlow. DoWhy supported causal modeling and refutation checks. In the privacy work, diffprivlib linear and logistic regression models were compared with scikit-learn baselines across privacy-budget settings. These were modeling investigations of tradeoffs, rather than a deployed decision system."
+        "text": "pandas, NumPy, and scikit-learn supported data preparation, classification, and evaluation, with Matplotlib for plots. AIF360 and fairlearn supported group-fairness metrics and mitigation experiments, including Exponentiated Gradient Reduction and adversarial debiasing with TensorFlow. DoWhy supported causal modeling and refutation checks. diffprivlib linear and logistic regression were compared with scikit-learn baselines across privacy-budget settings."
       }
     ],
     "id": "P14",
@@ -835,8 +846,8 @@
         "text": "Collection of Automobile Repositories (C.A.R.) was designed as a single place to explore vehicle listings from multiple dealerships. The requirements covered searches by vehicle type, color, year, price, mileage, and dealership location, alongside comparison tools, customer accounts, and administrator inventory management."
       },
       {
-        "title": "My contribution",
-        "text": "I helped write and develop the software description and the functionality names and descriptions in the team’s requirements specification. This work translated the marketplace idea into concrete user and administrator tasks that the database design needed to support."
+        "title": "Requirements and database design",
+        "text": "The requirements specification translated the marketplace concept into named user and administrator functions. Those functional descriptions guided the database design and clarified the workflows the software needed to support."
       },
       {
         "title": "Database design",
@@ -882,7 +893,7 @@
     "sections": [
       {
         "title": "Full-path simulation",
-        "text": "I implemented and tested the manipulator’s planned trajectory in simulation. The recorded demonstration shows the six-axis arm completing the full path, bringing the kinematic model and trajectory planning together in motion."
+        "text": "The manipulator’s planned trajectory was implemented and tested in simulation. The recorded demonstration shows the six-axis arm completing the full path, bringing the kinematic model and trajectory planning together in motion."
       },
       {
         "title": "The task",
@@ -987,7 +998,7 @@
     "sections": [
       {
         "title": "Two cardiac-device questions",
-        "text": "I investigated cardiovascular support and cardiac electrical stimulation through two related MATLAB studies. The LVAD work examined blood flow, ventricular loading and pump control. The defibrillation work examined source waveforms and cardiac membrane voltage. They share a modeling and parameter-analysis approach, with separate physiological models and results."
+        "text": "Two related MATLAB studies examined cardiovascular support and cardiac electrical stimulation. The LVAD model explored blood flow, ventricular loading, and pump control; the defibrillation model explored source waveforms and cardiac membrane voltage. They shared a modeling and parameter-analysis approach while using separate physiological models and results."
       },
       {
         "title": "LVAD · The question",
@@ -1007,7 +1018,7 @@
       },
       {
         "title": "LVAD · Simulation and physiological interpretation",
-        "text": "I used MATLAB scripts to investigate ventricular assistance by varying pump flow and comparing pressure, flow and ventricular-volume waveforms. The supplied cardiovascular model uses a Windkessel representation and time-varying ventricular elastance. Batch runs and pressure–volume analysis helped explain how increasing LVAD support changes the ventricle’s contribution to circulation. A subsequent control investigation related pump flow to end-diastolic pressure, keeping the model’s simplifications and validation limits explicit."
+        "text": "MATLAB scripts varied pump flow and compared pressure, flow, and ventricular-volume waveforms. A Windkessel representation and time-varying ventricular elastance supported the cardiovascular model. Batch runs and pressure–volume analysis showed how increasing LVAD support changed the ventricle’s contribution to circulation. A control investigation related pump flow to end-diastolic pressure."
       },
       {
         "title": "Defibrillation · Waveform timing and membrane response",
@@ -1027,7 +1038,7 @@
       },
       {
         "title": "Defibrillation · Waveform construction and response analysis",
-        "text": "The MATLAB study constructed biphasic exponential source waveforms and examined their modeled cardiac-cell membrane response. I investigated waveform tilt, phase duration and timing, using response plots and parameter comparisons to explain how a change at the source altered membrane voltage. The report figures distinguish the applied shock waveform from the modeled membrane response; the analysis does not establish a clinical defibrillation protocol."
+        "text": "The MATLAB study constructed biphasic exponential source waveforms and examined modeled cardiac-cell membrane response. Waveform tilt, phase duration, and timing were varied to show how changes at the source altered membrane voltage. Report figures distinguish the applied shock waveform from the modeled membrane response."
       }
     ],
     "featured": true,
@@ -1051,26 +1062,31 @@
         "caption": "A page from my emerging-opportunity report outlining the proposed product ecosystem."
       }
     ],
-    "summary": "A Lean Canvas and healthcare opportunity study for an AI-enabled ECG wearable, covering users, value proposition, and the proposed product ecosystem.",
+    "summary": "A market and product-opportunity study for an AI-enabled ECG wearable, focused on remote patient monitoring, competing devices, adoption, and a viable product ecosystem.",
     "tools": [
-      "Opportunity analysis",
-      "Lean Canvas",
+      "Emerging opportunity report",
       "Healthcare market research",
-      "Value proposition design",
-      "Stakeholder analysis"
+      "Market segmentation",
+      "Competitor benchmarking",
+      "Porter’s Five Forces",
+      "Value-chain mapping",
+      "Technology Adoption Life Cycle",
+      "Beachhead-market analysis",
+      "Whole-product planning",
+      "Partnership strategy"
     ],
     "sections": [
       {
-        "title": "Opportunity report",
-        "text": "The venture study examined the problem, intended users, competing approaches, and potential value of an AI-powered ECG wearable."
+        "title": "The opportunity",
+        "text": "The study focused on continuous ECG monitoring for patients who need remote cardiac follow-up. It separated remote patient monitoring from broader personal wellness and elder-care markets, then described how a wearable sensor, connected app, analytics, and clinician alerts could work as one product ecosystem."
       },
       {
-        "title": "Scope",
-        "text": "The deliverable is an opportunity and business-model study. It does not claim that a clinical device or diagnostic model was built."
+        "title": "Market and competitor research",
+        "text": "The report compared five relevant offerings, including Apple Watch, Philips DigiTrak XT, BioTelemetry ePatch, iRhythm Zio, and AliveCor KardiaMobile. It examined differences in wearability, monitoring duration, clinical workflow, and customer access. Porter’s Five Forces and value-chain mapping were used to assess competition, suppliers, entry barriers, and potential partners."
       },
       {
-        "title": "Research and business-model methods",
-        "text": "I used an emerging-opportunity report and Lean Canvas to examine an AI-enabled ECG wearable concept: the intended users, clinical need, value proposition and proposed product ecosystem. The work concerns opportunity assessment and business-model development; it does not claim implementation or validation of an ECG machine-learning model."
+        "title": "Product and entry strategy",
+        "text": "The analysis identified patients with chronic cardiovascular conditions as a potential beachhead, then mapped a whole-product offer: comfortable ECG capture, wireless data transfer, patient and clinician interfaces, alerting, accessories, and support. It considered healthcare-provider, technology, and manufacturing partnerships as routes to bring the concept to market."
       }
     ],
     "featured": true,
@@ -1104,29 +1120,31 @@
         "caption": "Original FarmerConnect app screen mockup."
       }
     ],
-    "summary": "A local-produce marketplace concept combining customer segmentation, a Lean Canvas, revenue planning, app mockups, and an AI-assisted recommendation idea.",
+    "summary": "A local-produce marketplace plan connecting shoppers and farmers through app mockups, customer segmentation, pricing, channel strategy, and AI-assisted recommendations.",
     "tools": [
       "Microsoft PowerPoint",
       "Lean Canvas",
       "Customer segmentation",
-      "Market research",
+      "Value proposition design",
       "Revenue model planning",
-      "App screen mockups",
+      "Competitor review",
+      "Channel strategy",
+      "App interface mockups",
       "AI recommendation use-case design",
-      "Pitch presentation"
+      "Pitch development"
     ],
     "sections": [
       {
-        "title": "The venture concept",
-        "text": "FarmerConnect was an app concept connecting local farmers with people buying fresh produce. I helped define customer segments, possible revenue streams, and the value proposition for both farmers and shoppers."
+        "title": "The marketplace concept",
+        "text": "FarmerConnect was designed to connect nearby growers with shoppers seeking fresh, seasonal produce. The plan defined value for both sides of the marketplace: direct access and discovery for customers, plus a digital sales channel for farmers."
       },
       {
-        "title": "App and AI concept",
-        "text": "I helped develop app designs for discovering produce, filtering choices, saving favorites, messaging, and managing a shopping basket. We proposed AI-assisted recommendations that could use a shopper’s preferences, budget, and available produce to surface relevant options."
+        "title": "Customer experience and AI concept",
+        "text": "The app mockups explored produce search and filtering, farmer profiles, ordering, favorites, messages, baskets, and notifications. An AI-assisted recommendation concept matched shopper preferences and budgets with currently available produce. Together, these features described how product discovery could become more relevant and convenient."
       },
       {
-        "title": "Business plan and pitch",
-        "text": "I contributed to the Lean Canvas, market research, partnership and channel planning, and the PowerPoint pitch. The original app mockups and business materials show how we translated a customer need into a product concept and operating model."
+        "title": "Business model and launch plan",
+        "text": "The business plan compared customer groups such as health-conscious shoppers, families, and busy professionals. It explored transaction commissions, premium subscriptions, and sponsored listings as revenue options, alongside delivery or pickup, restaurant and grocery partnerships, social media, content marketing, and email outreach. A Lean Canvas and PowerPoint pitch organized the value proposition, channels, operations, and growth assumptions."
       }
     ],
     "featured": true,
@@ -1146,28 +1164,30 @@
     "role": "Team consulting project · with Elijah Cook",
     "color": "paper",
     "gallery": [],
-    "summary": "A consulting study of a vehicle pickup and return service, with competitive analysis, garage partnership options, and a proposed AI booking assistant.",
+    "summary": "A consulting analysis of a vehicle pickup and return service, covering its competitive position, operating model, garage partnerships, and an AI booking concept.",
     "tools": [
       "Microsoft PowerPoint",
+      "VRIO assessment",
       "SWOT analysis",
-      "VRIO analysis",
-      "Competitor research",
-      "Market analysis",
-      "Garage partnership assessment",
+      "Internal capability analysis",
+      "External-market analysis",
+      "Competitor positioning",
+      "Operating-model design",
+      "Garage partnership strategy",
       "AI booking workflow design"
     ],
     "sections": [
       {
-        "title": "The business case",
-        "text": "AutoPicker was a proposed service that would pick up a customer’s vehicle for a garage appointment and return it after service. I assessed its competitive position, operating model, and the market conditions affecting adoption."
+        "title": "The service model",
+        "text": "AutoPicker proposed collecting a customer’s vehicle, taking it to a garage appointment, and returning it afterward. The team examined the convenience problem, the company’s app and website, and the operational dependencies behind a reliable pickup and drop-off service."
       },
       {
-        "title": "Analysis and recommendations",
-        "text": "I used SWOT, VRIO, and external-market analysis to evaluate AutoPicker’s capabilities and its position in the vehicle-service market. Our recommendations included clarifying the operating model and exploring partnerships with garages, where existing customer relationships could support adoption."
+        "title": "Strategic analysis",
+        "text": "A VRIO assessment examined internal capabilities and sources of advantage. External-market and SWOT analyses considered the gig economy, changing vehicle-service demand, competition, and the risks of relying on outside platforms. The work connected those findings to a clearer operating plan and more independent internal systems."
       },
       {
-        "title": "AI booking concept",
-        "text": "I outlined an AI booking assistant that could turn a customer’s natural-language request into structured appointment details for the service workflow."
+        "title": "Recommendations and AI booking",
+        "text": "The recommendations explored partnerships with garages that already have customer trust, alongside a refined service model. An AI booking assistant was outlined to turn a natural-language customer request into structured appointment details, reducing friction in the intake workflow."
       }
     ],
     "featured": true,
@@ -1239,7 +1259,7 @@
     "sections": [
       {
         "title": "Mechanical design and fabrication",
-        "text": "I worked on robot CAD parts, assembly, and fabrication. The work connected mechanical designs with printed parts and servo-actuated mechanisms, including the robot components shown here."
+        "text": "Robot CAD parts, assemblies, and fabrication work connected mechanical designs with 3D-printed components and servo-actuated mechanisms, including the examples shown here."
       },
       {
         "title": "Computer vision and speech interfaces",
@@ -1247,11 +1267,11 @@
       },
       {
         "title": "Web development and integration",
-        "text": "I also worked on web interfaces and API integration across internship tasks. The projects combined mechanical, electronics, AI, and software work within one engineering internship."
+        "text": "Web interfaces and API integration formed another part of the internship. The projects combined mechanical, electronics, AI, and software work within one engineering placement."
       },
       {
         "title": "Mechanical and software internship work",
-        "text": "My internship work covered SolidWorks robot-component design, STL preparation, 3D printing, servo mechanisms and control-circuit prototyping. The software work included Python / OpenCV vision interfaces, JavaScript web interfaces and a speech-to-text prototype. The page combines the original fabrication, simulation and interface material from these activities. Supplied training decks and upstream example packages are reference material, so their complete technology stacks are not presented as tools I independently implemented."
+        "text": "The internship included SolidWorks robot-component design, STL preparation, 3D printing, servo mechanisms, and control-circuit prototyping. Software work included Python/OpenCV vision interfaces, JavaScript web interfaces, and a speech-to-text prototype. The page brings together original fabrication, simulation, and interface material from those activities."
       }
     ],
     "image": "/gallery/smart-methods-award-portrait.webp",

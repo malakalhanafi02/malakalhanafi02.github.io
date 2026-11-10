@@ -498,7 +498,7 @@
     "eyebrow": "Fault-aware cooperative sensing and trust",
     "category": "kaust",
     "year": "2026–present",
-    "summary": "I am investigating how cooperative autonomous systems can retain useful information from recoverable sensor faults while handling unreliable or adversarial messages.",
+    "summary": "Researching how cooperative autonomous vehicles handle faulty and compromised sensor data, reviewing and comparing published approaches to define system models and evaluation plans for testing reliability and security.",
     "role": "Research formulation, literature review, system modeling, and evaluation planning",
     "status": "Ongoing research · more on this soon",
     "tools": [],
@@ -511,16 +511,29 @@
   },
   {
     "slug": "service-robot-interaction",
-    "title": "Multimodal service-robot interaction",
-    "eyebrow": "Multimodal service-robot interaction",
+    "title": "RoboNex · AI for service-robot interaction",
+    "eyebrow": "RoboNex · AI for service-robot interaction",
     "category": "kaust",
     "year": "2026–present",
-    "summary": "I am developing the behavior-to-intent formulation for a service robot that uses video, audio, and interaction context to choose an appropriate response.",
+    "summary": "I am working on AI for RoboNex, exploring how a service robot can interpret video, audio and interaction context to understand human behavior and respond appropriately.",
     "role": "Behavior and action definitions, sequence drafting, labeling workflow, and architecture research",
     "status": "Ongoing research · more on this soon",
-    "tools": [],
+    "tools": [
+      "Multimodal AI",
+      "Computer vision",
+      "YOLO",
+      "Vision-language models (VLMs)",
+      "Large language models (LLMs)",
+      "Model distillation",
+      "Graph and sequence modeling"
+    ],
     "color": "paper",
-    "sections": [],
+    "sections": [
+      {
+        "title": "AI research focus",
+        "text": "My work explores multimodal perception and intent recognition, including how large models can support data preparation and how smaller models could support efficient inference. I am reviewing and comparing approaches for behavior understanding and context-aware robot interaction."
+      }
+    ],
     "id": "P09",
     "kaust": true,
     "gallery": [],

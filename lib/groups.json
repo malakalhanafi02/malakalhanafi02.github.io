@@ -1,0 +1,18 @@
+[
+  {
+    "id": "robotics",
+    "title": "Robotics"
+  },
+  {
+    "id": "ai-data-software",
+    "title": "AI, data & software"
+  },
+  {
+    "id": "biomedical",
+    "title": "Biomedical engineering"
+  },
+  {
+    "id": "leadership",
+    "title": "Leadership & communication"
+  }
+]

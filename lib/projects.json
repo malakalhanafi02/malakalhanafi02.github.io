@@ -1,0 +1,1063 @@
+[
+  {
+    "slug": "autonomous-lawnmower",
+    "title": "Autonomous lawn mower",
+    "eyebrow": "Autonomous lawn mower",
+    "category": "robotics",
+    "year": "2026",
+    "summary": "Computer vision, coverage planning, and layered safety for a boundary-free autonomous lawn mower.",
+    "role": "AI & perception lead · multidisciplinary capstone team",
+    "status": "Capstone completed",
+    "tools": [
+      "YOLOv8",
+      "PyTorch",
+      "ROS",
+      "OpenCV",
+      "Jetson Nano"
+    ],
+    "color": "paper",
+    "image": "/gallery/mower-prototype.webp",
+    "imageAlt": "The team’s assembled lawn mower prototype.",
+    "metrics": [
+      {
+        "value": "0.764",
+        "label": "Detection mAP50 · validation set"
+      },
+      {
+        "value": "0.745",
+        "label": "Segmentation mAP50 · validation set"
+      },
+      {
+        "value": "Honourable mention",
+        "label": "Western Engineering Design Day"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The problem",
+        "text": "A robot mower needs to understand both the surface it can cut and the obstacles it must avoid. Our team developed an autonomous mower concept for elderly and mobility-limited users, combining a physical platform with a modular autonomy stack."
+      },
+      {
+        "title": "My contribution",
+        "text": "I led AI perception development: preparing image data, training and evaluating YOLOv8 detection and segmentation models, and connecting perception outputs with the wider robotic system. Lawn, boundary, and barrier masks support conservative cut/no-cut reasoning; object detections identify safety-relevant obstacles."
+      },
+      {
+        "title": "How the system fits together",
+        "text": "The team combined vision with LiDAR mapping, localization, coverage planning, motion control, and safety checks. ROS nodes exchange perception and navigation information, while Gazebo and RViz support staged simulation and visualization. The project includes both ROS 1 and ROS 2 development artifacts; the documented final report describes the ROS 1 pipeline."
+      },
+      {
+        "title": "Results and limits",
+        "text": "The recorded validation scores are 0.764 box mAP50 and 0.745 mask mAP50. The team earned an Honourable Mention at Engineering Design Day. Perception was used alongside independent safety checks; these validation scores do not measure the safety or field coverage of the complete robot."
+      }
+    ],
+    "links": [
+      {
+        "label": "View project on GitHub",
+        "href": "https://github.com/malakalhanafi02/Autonomous-Lawnmower"
+      },
+      {
+        "label": "Watch simulation walkthrough",
+        "href": "https://drive.google.com/file/d/1WV4yyKTy9lSwmz7GJ16YfoIyf3QvnkAL/view"
+      },
+      {
+        "label": "Western News · Design Day feature",
+        "href": "https://news.westernu.ca/2026/04/western-engineering-design-day-2026/"
+      },
+      {
+        "label": "Western Engineering · Design Day feature",
+        "href": "https://www.eng.uwo.ca/media/news/2026/From-concept-to-impact-Western-Engineering-students-shine-at-Design-Day.html"
+      }
+    ],
+    "id": "P01",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/mower-prototype.webp",
+        "caption": "The team’s assembled lawn mower prototype.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/mower-electronics.webp",
+        "caption": "The physical prototype with its cover open.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/mower-assembly.webp",
+        "caption": "Exploded CAD view of the team assembly.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/mower-coverage.webp",
+        "caption": "Recorded coverage-planning visualization in the simulated yard.",
+        "kind": "image"
+      }
+    ],
+    "demo": "mower",
+    "videoLink": "https://drive.google.com/file/d/1WV4yyKTy9lSwmz7GJ16YfoIyf3QvnkAL/view",
+    "featured": true
+  },
+  {
+    "slug": "miniature-c-arm",
+    "title": "Miniature C-arm surgical simulator",
+    "eyebrow": "Miniature C-arm surgical simulator",
+    "category": "biomedical",
+    "year": "2025",
+    "summary": "A scaled mechanical training prototype integrating CAD, printed parts, stepper motors, and orientation sensing.",
+    "role": "Team project · sensors and actuators",
+    "status": "Prototype",
+    "tools": [
+      "SolidWorks",
+      "3D printing",
+      "Embedded C",
+      "Stepper motors",
+      "IMU"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "The task",
+        "text": "The team designed a miniature C-arm simulator to explore positioning and movement associated with surgical imaging equipment."
+      },
+      {
+        "title": "The system",
+        "text": "The prototype combined a SolidWorks mechanical design and PLA printed parts with geared stepper motors and Bluetooth orientation sensing. Embedded control connected sensing to mechanical motion."
+      },
+      {
+        "title": "What it demonstrates",
+        "text": "The work shows integration across mechanical design, sensing, actuation, and firmware. It is a training-oriented motion prototype rather than an X-ray imaging system."
+      }
+    ],
+    "id": "P02",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/carm-prototype.webp",
+        "caption": "The C-arm simulator prototype during a classroom demonstration.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/carm-assembly.webp",
+        "caption": "The team’s C-arm assembly in CAD.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/carm-mechanism.webp",
+        "caption": "Gear and motion mechanism in the CAD assembly.",
+        "kind": "image"
+      }
+    ],
+    "image": "/gallery/carm-prototype.webp",
+    "imageAlt": "The C-arm simulator prototype during a classroom demonstration.",
+    "featured": true
+  },
+  {
+    "slug": "wheelchair-navigation",
+    "title": "Smart wheelchair navigation",
+    "eyebrow": "Smart wheelchair navigation",
+    "category": "robotics",
+    "year": "2025",
+    "summary": "An indoor mobile-robot prototype exploring room navigation, hazard awareness, and arrival verification for wheelchair assistance.",
+    "role": "Team course project · AISE 4020",
+    "status": "Prototype",
+    "tools": [
+      "ROS 2",
+      "Nav2",
+      "Python",
+      "OpenCV",
+      "LiDAR",
+      "A*"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "The problem",
+        "text": "Indoor assistive navigation needs more than a path between coordinates. The robot must recognize hazards, work around furniture, and confirm that it has reached the intended room."
+      },
+      {
+        "title": "What we built",
+        "text": "Our team used a Yahboom Pi5 mobile robot to map a physical mock home with LiDAR and explore room-to-room navigation. OpenCV modules detected red tape representing hazardous floor zones and used color and shape cues for furniture context. QR/barcode checks provided a separate arrival signal."
+      },
+      {
+        "title": "Testing and iteration",
+        "text": "Detector recalibration improved previously unsuccessful hazard and furniture tests. Obstacle avoidance remained partially successful, and the prototype could stall at a checkpoint if no barcode appeared. These limitations make the next steps clear: stronger recovery behavior and more robust arrival handling."
+      }
+    ],
+    "id": "P04",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/wheelchair-map.webp",
+        "caption": "A recorded occupancy map from the navigation work.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/wheelchair-detection.webp",
+        "caption": "A furniture-detection result from the submitted report.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/wheelchair-qr.webp",
+        "caption": "QR recognition used to verify a checkpoint.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/wheelchair-navigation.webp",
+        "caption": "The project’s room-navigation simulation.",
+        "kind": "image"
+      }
+    ],
+    "image": "/gallery/wheelchair-map.webp",
+    "imageAlt": "A recorded occupancy map from the navigation work.",
+    "featured": true
+  },
+  {
+    "slug": "neonatal-phototherapy",
+    "title": "Neonatal phototherapy blanket",
+    "eyebrow": "Neonatal phototherapy blanket",
+    "category": "biomedical",
+    "year": "2026",
+    "summary": "A course design study for a low-cost neonatal phototherapy blanket intended for resource-constrained settings.",
+    "role": "Medical and assistive devices course project · MME 4470",
+    "status": "Design study",
+    "tools": [
+      "Medical device design",
+      "Requirements",
+      "Engineering analysis",
+      "Technical reporting"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "The design question",
+        "text": "How could a phototherapy blanket be designed with affordability and the realities of resource-constrained care in mind? The course project develops the requirements and engineering rationale for a proposed device."
+      },
+      {
+        "title": "The work",
+        "text": "The project folder contains the final report, appendix, design analysis, and presentation materials. The work connects device architecture and practical implementation constraints with the intended use setting."
+      },
+      {
+        "title": "Scope",
+        "text": "This is a student design study. It is not a clinically validated device, and the portfolio does not claim a treatment outcome."
+      }
+    ],
+    "id": "P05",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/phototherapy-assembly.webp",
+        "caption": "CAD design of the phototherapy light-pad assembly.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/phototherapy-power.webp",
+        "caption": "Power and electronics housing in the CAD design.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/phototherapy-layers.webp",
+        "caption": "Exploded view of the proposed layered pad.",
+        "kind": "image"
+      }
+    ],
+    "image": "/gallery/phototherapy-assembly.webp",
+    "imageAlt": "CAD design of the phototherapy light-pad assembly.",
+    "featured": true
+  },
+  {
+    "slug": "gem-sorting-robot",
+    "title": "Gem-sorting rover — Scooper Bot 10001",
+    "eyebrow": "Gem-sorting rover — Scooper Bot 10001",
+    "category": "robotics",
+    "year": "2024",
+    "summary": "A constrained autonomous rover project combining pickup mechanics, color sensing, motor feedback, and sorting.",
+    "role": "Team project · MSE 2202",
+    "status": "Prototype",
+    "tools": [
+      "ESP32-S3",
+      "Arduino C++",
+      "PID",
+      "TCS34725",
+      "SolidWorks"
+    ],
+    "color": "paper",
+    "image": "/gallery/scooper-assembly.webp",
+    "imageAlt": "Full assembly CAD model explicitly labeled in the Scooper team report.",
+    "sections": [
+      {
+        "title": "The challenge",
+        "text": "The course challenge called for a rover that could collect and sort colored gems, then return to base within a time and parts budget."
+      },
+      {
+        "title": "The design",
+        "text": "Our team used a funnel and revolving-door sorter with a color sensor inside a light-isolated chamber. ESP32-S3 firmware, encoder feedback, and motor control supported rover movement, while a servo-operated pickup mechanism handled the gems."
+      },
+      {
+        "title": "Results and limitations",
+        "text": "The report describes pickup and color-sorting success, with return-to-base behavior limited by IR-beacon localization. This made sensing reliability and recovery an important part of the final analysis."
+      }
+    ],
+    "id": "P06",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/scooper-assembly.webp",
+        "caption": "Full assembly CAD model explicitly labeled in the Scooper team report.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/scooper-claw.webp",
+        "caption": "Claw test photographed during development.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/scooper-wheel.webp",
+        "caption": "Wheel-development photo from the team report.",
+        "kind": "image"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "P07",
+    "slug": "sma-finger",
+    "title": "SMA-actuated printed finger",
+    "eyebrow": "SMA-actuated printed finger",
+    "category": "biomedical",
+    "kaust": false,
+    "year": "Coursework",
+    "status": "Laboratory prototype",
+    "role": "Sensors and actuators laboratory project",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/finger-prototype.webp",
+        "caption": "The printed finger prototype in the laboratory.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/finger-printed.webp",
+        "caption": "Printed components for the finger mechanism.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/finger-circuit.webp",
+        "caption": "The accompanying laboratory circuit.",
+        "kind": "image"
+      }
+    ],
+    "summary": "A printed finger mechanism with a shape-memory-alloy actuation investigation.",
+    "tools": [
+      "SolidWorks",
+      "3D printing",
+      "SMA actuation",
+      "Circuit testing"
+    ],
+    "sections": [
+      {
+        "title": "Prototype and test",
+        "text": "The assignment combines a printed finger mechanism, actuation analysis, a laboratory circuit, and recorded motion. The available photos show the fabricated parts and test setup."
+      },
+      {
+        "title": "Engineering work",
+        "text": "The submitted work includes a dimensioned drawing and device analysis connecting actuator behavior to the finger mechanism. The video below records the laboratory demonstration."
+      }
+    ],
+    "image": "/gallery/finger-prototype.webp",
+    "imageAlt": "The printed finger prototype in the laboratory.",
+    "video": {
+      "src": "/media/finger-actuation.mp4",
+      "caption": "Laboratory actuation video of the finger mechanism.",
+      "poster": "/gallery/finger-prototype.webp"
+    },
+    "featured": true
+  },
+  {
+    "slug": "fault-aware-cooperation",
+    "title": "Fault-aware cooperative sensing and trust",
+    "eyebrow": "Fault-aware cooperative sensing and trust",
+    "category": "kaust",
+    "year": "2026–present",
+    "summary": "I am investigating how cooperative autonomous systems can retain useful information from recoverable sensor faults while handling unreliable or adversarial messages.",
+    "role": "Research formulation, literature review, system modeling, and evaluation planning",
+    "status": "Ongoing research · more on this soon",
+    "tools": [],
+    "color": "paper",
+    "sections": [],
+    "id": "P08",
+    "kaust": true,
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "slug": "service-robot-interaction",
+    "title": "Multimodal service-robot interaction",
+    "eyebrow": "Multimodal service-robot interaction",
+    "category": "kaust",
+    "year": "2026–present",
+    "summary": "I am developing the behavior-to-intent formulation for a service robot that uses video, audio, and interaction context to choose an appropriate response.",
+    "role": "Behavior and action definitions, sequence drafting, labeling workflow, and architecture research",
+    "status": "Ongoing research · more on this soon",
+    "tools": [],
+    "color": "paper",
+    "sections": [],
+    "id": "P09",
+    "kaust": true,
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "slug": "soft-robotic-actuators",
+    "title": "Liquid crystal elastomer soft actuators",
+    "eyebrow": "Liquid crystal elastomer soft actuators",
+    "category": "kaust",
+    "year": "2023",
+    "summary": "Experimental research on liquid crystal elastomers for soft robotics, from material preparation and fabrication to heat-responsive motion, load testing, and a solar-tracker demonstrator.",
+    "role": "Research intern · KAUST",
+    "status": "Research internship",
+    "tools": [
+      "Liquid crystal elastomers",
+      "3D printing",
+      "Experimental testing",
+      "Soft robotics"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "Research focus",
+        "text": "During my internship at King Abdullah University of Science and Technology (KAUST), I worked on liquid crystal elastomers for responsive soft actuators. The project explored how a flexible polymer could produce useful motion when exposed to heat or light. The broader research direction brought together the actuator material, printed heating elements, and sensing; my experimental work focused on preparing the material, shaping it, and understanding its response."
+      },
+      {
+        "title": "Fabrication and preparation",
+        "text": "I worked with cast LCE formulations and direct-ink-writing approaches, preparing mixtures and carrying samples through molding, stretching, and curing. I also developed sketches for laser cutting and worked with LCE elements attached to flexible silicone substrates. The fabrication work involved adjusting preparation and printing conditions, then checking whether the resulting material could be handled and tested as an actuator."
+      },
+      {
+        "title": "Actuation and application tests",
+        "text": "I tested how the LCE strips contracted and recovered under heating and cooling, including experiments with suspended weights to see whether the material could perform mechanical work. I also tested LCE elements in a solar-tracker demonstrator, where heating one side changed the orientation of the supported solar cell. These experiments connected the behavior of the material to a possible device application."
+      },
+      {
+        "title": "Thermal response and coatings",
+        "text": "I investigated conductive layers and light-absorbing treatments as ways to alter the thermal response. I compared coated and uncoated strips, tracked their heating and cooling behavior, and recorded changes in shape and length under heat and sunlight. The observations helped distinguish contraction, bending, and recovery, while identifying which coating and fabrication choices needed further testing."
+      }
+    ],
+    "id": "P10",
+    "kaust": true,
+    "gallery": [
+      {
+        "src": "/gallery/kaust-2023-load-testing.webp",
+        "caption": "Heat-actuated LCE strip in the load-lifting test setup."
+      },
+      {
+        "src": "/gallery/kaust-2023-solar-demonstrator.webp",
+        "caption": "Solar-tracker demonstrator using responsive LCE strips."
+      },
+      {
+        "src": "/gallery/kaust-2023-solar-before.webp",
+        "caption": "Solar-cell demonstrator before the LCE heating test."
+      },
+      {
+        "src": "/gallery/kaust-2023-solar-after.webp",
+        "caption": "Solar-cell demonstrator after heating one LCE element."
+      },
+      {
+        "src": "/gallery/kaust-2023-direct-ink-writing.webp",
+        "caption": "Direct-ink-writing and curing work during the internship."
+      },
+      {
+        "src": "/gallery/lce-lasercut.webp",
+        "caption": "Laser-cutting work during actuator fabrication."
+      }
+    ],
+    "image": "/gallery/kaust-2023-load-testing.webp",
+    "imageAlt": "Heat-actuated LCE strip in the load-lifting test setup.",
+    "video": {
+      "src": "/media/lce-actuation.mp4",
+      "caption": "Original footage of the responsive LCE sample under heating.",
+      "poster": "/gallery/lce-actuation.webp"
+    },
+    "featured": false
+  },
+  {
+    "slug": "household-energy-forecasting",
+    "title": "Household energy forecasting",
+    "eyebrow": "Household energy forecasting",
+    "category": "ai-data-software",
+    "year": "2024",
+    "summary": "Feature engineering and deep sequence models for forecasting household electricity use from smart-meter data.",
+    "role": "Group project · preprocessing, features, and LSTM development",
+    "status": "Course project",
+    "tools": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "pandas",
+      "LSTM"
+    ],
+    "color": "paper",
+    "metrics": [
+      {
+        "value": "0.65",
+        "label": "Reported test R²"
+      },
+      {
+        "value": "1.07",
+        "label": "Reported test MAE · report target scale"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The problem",
+        "text": "Minute-level electricity measurements contain temporal structure, missing values, and relationships between aggregate and sub-metered consumption. A useful model needs careful data preparation as well as a suitable architecture."
+      },
+      {
+        "title": "My contribution",
+        "text": "I worked on preprocessing, Power Factor and Global Active Energy features, and the LSTM architecture and tuning. The final group model used two 128-unit LSTM layers with a dense prediction head and a 256-step input window."
+      },
+      {
+        "title": "Results in context",
+        "text": "The report records a final test R² of 0.65 and MAE of 1.07 on the project’s target scale. Earlier model attempts performed poorly, making iterative diagnosis a central part of the work. Related assignments compared ARIMA, MLP, CNN, RNN, LSTM, GRU, TCN, and Transformer-based approaches across separate datasets."
+      }
+    ],
+    "id": "P11",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/energy-feature-series.webp",
+        "caption": "Global Active Energy feature over time, from the group report.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/energy-prediction.webp",
+        "caption": "Predicted and actual sub-metering values from the report.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/energy-training-loss.webp",
+        "caption": "Recorded training and validation loss by epoch.",
+        "kind": "image"
+      }
+    ],
+    "image": "/gallery/energy-feature-series.webp",
+    "imageAlt": "Global Active Energy feature over time, from the group report.",
+    "featured": true
+  },
+  {
+    "slug": "responsible-machine-learning",
+    "title": "Machine-learning fairness and differential privacy",
+    "eyebrow": "Machine-learning fairness and differential privacy",
+    "category": "ai-data-software",
+    "year": "2025",
+    "summary": "A series of labs auditing group disparities and exploring mitigation, causal analysis, and the privacy–accuracy tradeoff.",
+    "role": "Individual lab sequence · AISE 3020",
+    "status": "Coursework",
+    "tools": [
+      "Python",
+      "fairlearn",
+      "AIF360",
+      "DoWhy",
+      "diffprivlib"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "The question",
+        "text": "A model can perform well on average while producing different error patterns across groups. Removing a sensitive feature alone does not remove information carried by correlated features."
+      },
+      {
+        "title": "The lab sequence",
+        "text": "I examined classification disparities in COMPAS data, explored fairness interventions, built causal-analysis exercises, and tested differentially private regression models. The labs connect evaluation choices with explicit assumptions about fairness and privacy."
+      }
+    ],
+    "id": "P14",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/fairness-group-accuracy.webp",
+        "caption": "Group accuracy in the submitted COMPAS coursework analysis.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/privacy-logistic-epsilon.webp",
+        "caption": "Notebook output: privacy–accuracy tradeoff for logistic regression.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/privacy-logistic-normalized.webp",
+        "caption": "Notebook output for the normalized differential-privacy experiment.",
+        "kind": "image"
+      }
+    ],
+    "image": "/gallery/fairness-group-accuracy.webp",
+    "imageAlt": "Group accuracy in the submitted COMPAS coursework analysis.",
+    "featured": true
+  },
+  {
+    "id": "P19",
+    "slug": "vehicle-marketplace-database",
+    "title": "C.A.R. vehicle marketplace database",
+    "eyebrow": "Vehicle marketplace database",
+    "category": "ai-data-software",
+    "kaust": false,
+    "year": "2023",
+    "status": "Course project",
+    "role": "Team database project · requirements and functionality specification",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/vehicle-er.webp",
+        "caption": "Original conceptual entity-relationship model from the team’s database report."
+      },
+      {
+        "src": "/gallery/vehicle-query.webp",
+        "caption": "Original SQL output showing a conditional price update and the resulting sample vehicle records."
+      },
+      {
+        "src": "/gallery/vehicle-dealership-view.webp",
+        "caption": "Original SQL view grouping dealerships with their regions and popularity scores."
+      }
+    ],
+    "summary": "A relational database project for a multi-dealership vehicle marketplace, developed from requirements and entity modeling through SQL queries and views.",
+    "tools": [
+      "SQL",
+      "MySQL",
+      "Database design",
+      "Web development"
+    ],
+    "sections": [
+      {
+        "title": "The marketplace",
+        "text": "Collection of Automobile Repositories (C.A.R.) was designed as a single place to explore vehicle listings from multiple dealerships. The requirements covered searches by vehicle type, color, year, price, mileage, and dealership location, alongside comparison tools, customer accounts, and administrator inventory management."
+      },
+      {
+        "title": "My contribution",
+        "text": "I helped write and develop the software description and the functionality names and descriptions in the team’s requirements specification. This work translated the marketplace idea into concrete user and administrator tasks that the database design needed to support."
+      },
+      {
+        "title": "Database design",
+        "text": "The team modeled users, administrators, customers, dealerships, vehicles, advertisements, and reviews, then mapped those relationships to relational tables with keys and references. The schema evaluation considered how separating reviews from vehicle and customer information could reduce duplicated data and make updates easier to manage."
+      },
+      {
+        "title": "SQL implementation and outputs",
+        "text": "The project files include table-creation scripts, sample vehicle and dealership data, a MySQL database export, update and deletion exercises, and database views. The original screenshots show a conditional vehicle-price update and a dealership-popularity view that groups dealership information with click counts. A Next.js front-end scaffold is also present; the main demonstrated deliverable here is the database and its SQL outputs."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/vehicle-er.webp",
+    "imageAlt": "Original conceptual entity-relationship model from the team’s database report."
+  },
+  {
+    "slug": "robot-arm-planning",
+    "title": "Six-axis robot arm kinematics and path planning",
+    "eyebrow": "Six-axis robot arm kinematics and path planning",
+    "category": "robotics",
+    "year": "2025",
+    "summary": "Forward and inverse kinematics, Jacobians, and potential-field path planning for a six-axis manipulator.",
+    "role": "Partner course project · MSE 4401",
+    "status": "Course project",
+    "tools": [
+      "MATLAB",
+      "Simulink",
+      "Kinematics",
+      "Path planning"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "The task",
+        "text": "We modeled a six-degree-of-freedom CrustCrawler arm for a bin-picking application, then planned end-effector motion around obstacles in the workspace."
+      },
+      {
+        "title": "The implementation",
+        "text": "The project includes Denavit–Hartenberg forward kinematics, geometric inverse kinematics, Jacobian calculations, and potential-field planning. Parameter sweeps investigated stability and path smoothness."
+      },
+      {
+        "title": "Limits and related work",
+        "text": "Representative planned paths avoided modeled spherical obstacles. The point-mass approximation and local minima limit what the simulation establishes. Related Baxter labs explored PID and computed-torque control on a seven-axis robot."
+      }
+    ],
+    "id": "P23",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/robot-arm-path-one.webp",
+        "caption": "Planned end-effector path around modeled spherical obstacles.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/robot-arm-path-two.webp",
+        "caption": "Second nominal end-effector path in the study.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/robot-arm-parameter-comparison.webp",
+        "caption": "Effect of the repulsive-field influence radius on planned paths.",
+        "kind": "image"
+      }
+    ],
+    "image": "/gallery/robot-arm-path-one.webp",
+    "imageAlt": "Planned end-effector path around modeled spherical obstacles.",
+    "featured": true
+  },
+  {
+    "id": "P27",
+    "slug": "lvad-modeling",
+    "title": "LVAD and cardiovascular modeling",
+    "eyebrow": "LVAD and cardiovascular modeling",
+    "category": "biomedical",
+    "kaust": false,
+    "year": "2025",
+    "status": "Modeling study",
+    "role": "Team biomedical systems analysis project · ECE 4455A",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/lvad-total-flow.webp",
+        "caption": "Total modeled flow versus LVAD flow for resting and exercising conditions; the marked bends indicate where pump flow begins to dominate."
+      },
+      {
+        "src": "/gallery/lvad-pressure-on.webp",
+        "caption": "Original final-cycle arterial and ventricular pressure traces with strong LVAD support."
+      },
+      {
+        "src": "/gallery/lvad-pressure-off.webp",
+        "caption": "Original final-cycle arterial and ventricular pressure traces with the LVAD disabled."
+      },
+      {
+        "src": "/gallery/lvad-controller.webp",
+        "caption": "The team’s controller-law overlay on the modeled exercise condition."
+      }
+    ],
+    "summary": "A MATLAB study of how ventricular assistance changes cardiac flow, pressure, and workload, followed by a physiologically responsive LVAD control investigation.",
+    "tools": [
+      "MATLAB",
+      "LVAD models",
+      "Cardiovascular simulation"
+    ],
+    "sections": [
+      {
+        "title": "The question",
+        "text": "A left ventricular assist device supplies flow alongside a weakened heart, but stronger pump support also changes the pressures and workload of the native ventricle. Our study examined this interaction under resting and exercise conditions using a simplified cardiovascular model."
+      },
+      {
+        "title": "Comparing assisted and unassisted circulation",
+        "text": "We varied the pump contribution and compared total systemic flow, ventricular pressure-volume loops, and ventricular and arterial pressure traces. The outputs show how increasing support can unload the ventricle until the pump supplies nearly all of the flow. Comparing the pressure traces with and without assistance helped explain when the aortic valve could open and why pulsatility changed."
+      },
+      {
+        "title": "Physiologically responsive control",
+        "text": "We then overlaid a Starling-like supervisory control law on the relationship between pump flow and end-diastolic pressure. The aim was to select a resting operating point and examine how that same controller responded to the increased demand represented by the exercise model, while retaining a contribution from the native heart."
+      },
+      {
+        "title": "Interpreting the model",
+        "text": "The report compares the model’s baseline filling-pressure behavior with a reference example and discusses the consequences of that mismatch. The investigation treats the outputs as simulation results: the simplified circulation, fixed parameters, and limited physiological feedback restrict how far the controller findings can be generalized."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/lvad-total-flow.webp",
+    "imageAlt": "Total modeled flow versus LVAD flow for resting and exercising conditions; the marked bends indicate where pump flow begins to dominate."
+  },
+  {
+    "id": "P28",
+    "slug": "defibrillation-waveforms",
+    "title": "Biphasic defibrillation waveforms",
+    "eyebrow": "Biphasic defibrillation waveforms",
+    "category": "biomedical",
+    "kaust": false,
+    "year": "2025",
+    "status": "Simulation study",
+    "role": "Team cardiac electrophysiology investigation · ECE 4455A",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/defib-response.webp",
+        "caption": "Original source-voltage and membrane-voltage response for a tuned-duration biphasic waveform."
+      },
+      {
+        "src": "/gallery/defib-matched-waveforms.webp",
+        "caption": "Original overlay of membrane responses after fixed-tilt parameters were matched to the selected phase durations."
+      }
+    ],
+    "summary": "A MATLAB investigation of how biphasic shock timing and waveform tilt change the modeled source voltage and cardiac-cell membrane response.",
+    "tools": [
+      "MATLAB",
+      "Waveform analysis",
+      "Biomedical control"
+    ],
+    "sections": [
+      {
+        "title": "Waveform timing and membrane response",
+        "text": "The investigation compared two ways of defining a biphasic exponential waveform: ending each phase at a specified voltage tilt, or choosing its duration directly. A cardiac-cell electrical model connected the applied source waveform with the resulting membrane-voltage response."
+      },
+      {
+        "title": "What we investigated",
+        "text": "We examined the source time constant and energy-storage assumptions, swept the membrane time constant, and compared the membrane response at the end of each phase. The first phase was assessed for depolarization and the second for the residual membrane response after the polarity reversal."
+      },
+      {
+        "title": "Matching the two parameterizations",
+        "text": "The final comparison converted chosen phase durations into their corresponding tilt values and ran both formulations with the same source assumptions. The resulting membrane-voltage curves nearly coincide, illustrating that matched fixed-tilt and tuned-duration settings can describe the same underlying exponential waveform."
+      },
+      {
+        "title": "Project scope",
+        "text": "The deliverables were MATLAB calculations, waveform overlays, and a written interpretation of the electrical model. These are educational simulation results rather than device testing or clinical validation."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/defib-response.webp",
+    "imageAlt": "Original source-voltage and membrane-voltage response for a tuned-duration biphasic waveform."
+  },
+  {
+    "id": "P37",
+    "slug": "ecg-wearable-venture",
+    "title": "AI-powered ECG wearable venture study",
+    "eyebrow": "AI-powered ECG wearable venture study",
+    "category": "leadership",
+    "kaust": false,
+    "year": "2023",
+    "status": "Venture concept",
+    "role": "Engineering entrepreneurship coursework",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/ecg-opportunity.webp",
+        "caption": "A page from my emerging-opportunity report outlining the proposed product ecosystem."
+      }
+    ],
+    "summary": "An emerging-opportunity report examining an AI-enabled ECG wearable concept.",
+    "tools": [
+      "Opportunity analysis",
+      "Lean Canvas",
+      "Healthcare technology"
+    ],
+    "sections": [
+      {
+        "title": "Opportunity report",
+        "text": "The venture-creation assignment examined the problem, intended users, competing approaches, and potential value of an AI-powered ECG wearable."
+      },
+      {
+        "title": "Scope",
+        "text": "The deliverable is an opportunity and business-model study. It does not claim that a clinical device or diagnostic model was built."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/ecg-opportunity.webp",
+    "imageAlt": "A page from my emerging-opportunity report outlining the proposed product ecosystem.",
+    "links": [
+      {
+        "label": "Open report preview",
+        "href": "/gallery/ecg-opportunity.webp"
+      }
+    ]
+  },
+  {
+    "id": "P38",
+    "slug": "farmerconnect",
+    "title": "FarmerConnect business plan",
+    "eyebrow": "FarmerConnect business plan",
+    "category": "leadership",
+    "kaust": false,
+    "year": "2023",
+    "status": "Business plan",
+    "role": "Entrepreneurship coursework",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/farmerconnect-slides.webp",
+        "caption": "Title slide from the original FarmerConnect business-plan presentation."
+      },
+      {
+        "src": "/gallery/farmerconnect-app-1.webp",
+        "caption": "Original FarmerConnect app homepage mockup."
+      },
+      {
+        "src": "/gallery/farmerconnect-app-3.webp",
+        "caption": "Original FarmerConnect app screen mockup."
+      }
+    ],
+    "summary": "A venture concept developed through a business plan, pitch, and Lean Canvas.",
+    "tools": [
+      "Business models",
+      "Entrepreneurship",
+      "Pitch development"
+    ],
+    "sections": [
+      {
+        "title": "The venture concept",
+        "text": "FarmerConnect was a coursework venture concept for connecting local farms with customers looking for fresh produce. The business-plan presentation considered customer groups, marketing channels, partnerships, and how an app could support product discovery and communication."
+      },
+      {
+        "title": "Design and planning work",
+        "text": "The original app mockups show a produce-discovery homepage, search and filtering controls, favorites, messages, a shopping basket, and notifications. These screens are design concepts accompanying the business plan rather than a deployed marketplace."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/farmerconnect-slides.webp",
+    "imageAlt": "Title slide from the original FarmerConnect business-plan presentation.",
+    "links": [
+      {
+        "label": "Open presentation preview",
+        "href": "/gallery/farmerconnect-slides.webp"
+      }
+    ]
+  },
+  {
+    "id": "P39",
+    "slug": "autopicker",
+    "title": "AutoPicker consulting project",
+    "eyebrow": "AutoPicker consulting project",
+    "category": "leadership",
+    "kaust": false,
+    "year": "2024",
+    "status": "Consulting study",
+    "role": "Team consulting coursework · with Elijah Cook",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/autopicker-slides.webp",
+        "caption": "Original AutoPicker consulting presentation title slide."
+      }
+    ],
+    "summary": "A team consulting presentation applying business-strategy analysis.",
+    "tools": [
+      "Strategy",
+      "Consulting",
+      "Presentation"
+    ],
+    "sections": [
+      {
+        "title": "The business case",
+        "text": "Our team analyzed AutoPicker, a proposed service for taking a customer’s vehicle to and from an auto-service garage. We considered the company’s capabilities, its position in the gig economy, and the operational decisions needed to develop the business."
+      },
+      {
+        "title": "Analysis and recommendations",
+        "text": "The presentation used internal capability assessment, VRIO, and SWOT analysis to connect the business model with practical recommendations. We proposed clarifying the operating model, developing more independent internal systems, and considering partnerships with garages to connect existing customer trust with AutoPicker’s technology."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/autopicker-slides.webp",
+    "imageAlt": "Original AutoPicker consulting presentation title slide.",
+    "links": [
+      {
+        "label": "Download original presentation (PowerPoint)",
+        "href": "/assets/AutoPicker-Presentation.pptx"
+      }
+    ]
+  },
+  {
+    "slug": "engineering-leadership",
+    "title": "Engineering leadership, ethics and design-thinking work",
+    "eyebrow": "Engineering leadership, ethics and design-thinking work",
+    "category": "leadership",
+    "year": "2022–2026",
+    "summary": "A multi-year stream in entrepreneurship, human-centered design, consulting, ethics, and engineering leadership.",
+    "role": "Engineering Leadership and Innovation Certificate · Western",
+    "status": "Certificate coursework",
+    "tools": [
+      "User research",
+      "Design thinking",
+      "Technical communication",
+      "Ethics",
+      "Strategy"
+    ],
+    "color": "paper",
+    "sections": [
+      {
+        "title": "The coursework",
+        "text": "The certificate stream brought together venture creation, human-centered design, business strategy, engineering ethics, and leadership. Work includes opportunity reports, user-interview synthesis, case analysis, and reflective writing."
+      }
+    ],
+    "id": "P40",
+    "kaust": false,
+    "gallery": [
+      {
+        "src": "/gallery/leadership-fax.webp",
+        "caption": "Original team presentation slide defining communication problems in healthcare prescription workflows."
+      }
+    ],
+    "featured": true,
+    "image": "/gallery/leadership-fax.webp",
+    "imageAlt": "Original team presentation slide defining communication problems in healthcare prescription workflows.",
+    "links": [
+      {
+        "label": "Open presentation preview",
+        "href": "/gallery/leadership-fax.webp"
+      }
+    ]
+  },
+  {
+    "id": "P41",
+    "slug": "smart-methods-internship",
+    "title": "Smart Methods engineering internship",
+    "eyebrow": "Smart Methods engineering internship",
+    "category": "robotics",
+    "kaust": false,
+    "year": "2024",
+    "status": "CAD and fabrication projects",
+    "role": "Smart Methods engineering internship",
+    "color": "paper",
+    "gallery": [
+      {
+        "src": "/gallery/smart-methods-robot.webp",
+        "caption": "Printed and servo-actuated robot components from internship work.",
+        "kind": "image"
+      },
+      {
+        "src": "/gallery/smart-methods-speech.webp",
+        "caption": "Speech-to-text interface from my internship work."
+      },
+      {
+        "src": "/gallery/smart-methods-servo-mount.webp",
+        "caption": "A physical SG90 servo mounted in a printed base during the internship."
+      },
+      {
+        "src": "/gallery/smart-methods-servo-control.webp",
+        "caption": "ESP32 servo-position control interface with an angle slider."
+      },
+      {
+        "src": "/gallery/smart-methods-arm-planning.webp",
+        "caption": "Robot-arm simulation and motion planning in RViz/MoveIt."
+      },
+      {
+        "src": "/gallery/smart-methods-servo-circuit.webp",
+        "caption": "Six-servo Arduino wiring simulation with an external power supply."
+      }
+    ],
+    "summary": "Robot fabrication, computer vision, speech interfaces, and web development completed during my engineering internship.",
+    "tools": [
+      "SolidWorks",
+      "3D printing",
+      "Servos",
+      "Python",
+      "OpenCV",
+      "JavaScript",
+      "Web development"
+    ],
+    "sections": [
+      {
+        "title": "Mechanical design and fabrication",
+        "text": "I worked on robot CAD parts, assembly, and fabrication. The work connected mechanical designs with printed parts and servo-actuated mechanisms, including the robot components shown here."
+      },
+      {
+        "title": "Computer vision and speech interfaces",
+        "text": "My internship projects included computer-vision exercises and a speech-to-text web interface. These tasks connected camera or microphone input with software that presents the result to a user."
+      },
+      {
+        "title": "Web development and integration",
+        "text": "I also worked on web interfaces and API integration across internship tasks. The projects combined mechanical, electronics, AI, and software work within one engineering internship."
+      }
+    ],
+    "image": "/gallery/smart-methods-robot.webp",
+    "imageAlt": "Printed and servo-actuated robot components from internship work.",
+    "featured": true,
+    "links": [
+      {
+        "label": "Smart Methods",
+        "href": "https://www.s-m.com.sa/en/index.html"
+      }
+    ],
+    "activities": [
+      "Robot part design, assembly, and 3D printing",
+      "Servo-actuated robot mechanisms and control interfaces",
+      "Computer-vision exercises and camera interfaces",
+      "Speech-to-text web interface",
+      "Web development and API integration"
+    ]
+  }
+]

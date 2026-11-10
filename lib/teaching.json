@@ -1,0 +1,50 @@
+[
+  [
+    "Spreadsheet modeling",
+    "Financial and operational models in Excel"
+  ],
+  [
+    "Cleaning, wrangling & visualization",
+    "Data preparation and exploratory analysis"
+  ],
+  [
+    "Visualization & simple regression",
+    "Connecting plots, correlation, and regression"
+  ],
+  [
+    "Regression analysis",
+    "Model interpretation and significance"
+  ],
+  [
+    "Multiple regression & interactions",
+    "Working with richer predictor relationships"
+  ],
+  [
+    "Logistic regression in R",
+    "Fitting and interpreting binary outcomes"
+  ],
+  [
+    "Classification probabilities",
+    "Prediction, odds, and logistic models"
+  ],
+  [
+    "k-nearest neighbors & Naive Bayes",
+    "Data partitioning and classification"
+  ],
+  [
+    "Unsupervised learning",
+    "Clustering, distance, and dendrograms"
+  ],
+  [
+    "Risk analysis & simulation",
+    "Monte Carlo and distribution-based analysis"
+  ],
+  [
+    "Linear optimization",
+    "Decision variables, objectives, and constraints"
+  ],
+  [
+    "Nonlinear optimization",
+    "Solver models and sensitivity exploration"
+  ]
+]

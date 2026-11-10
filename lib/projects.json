@@ -1109,12 +1109,11 @@
       "Microsoft PowerPoint",
       "Lean Canvas",
       "Customer segmentation",
-      "Value proposition design",
       "Market research",
-      "Revenue model design",
-      "App interface mockups",
-      "AI use-case design",
-      "Pitch development"
+      "Revenue model planning",
+      "App screen mockups",
+      "AI recommendation use-case design",
+      "Pitch presentation"
     ],
     "sections": [
       {
@@ -1152,12 +1151,10 @@
       "Microsoft PowerPoint",
       "SWOT analysis",
       "VRIO analysis",
-      "Competitive analysis",
-      "External environment analysis",
-      "Market research",
-      "Partnership strategy",
-      "AI use-case design",
-      "Consulting presentations"
+      "Competitor research",
+      "Market analysis",
+      "Garage partnership assessment",
+      "AI booking workflow design"
     ],
     "sections": [
       {
@@ -1176,13 +1173,7 @@
     "featured": true,
     "image": "/gallery/autopicker-concept.webp",
     "imageAlt": "Concept illustration for AutoPicker consulting project.",
-    "links": [
-      {
-        "label": "Download original presentation (PowerPoint)",
-        "href": "/assets/AutoPicker-Presentation.pptx"
-      }
-    ],
-    "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
+    "coverCaption": "Concept illustration for the AutoPicker consulting study."
   },
   {
     "id": "P41",

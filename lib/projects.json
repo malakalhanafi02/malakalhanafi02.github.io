@@ -454,7 +454,7 @@
         "kind": "image"
       }
     ],
-    "summary": "I connected muscle-signal processing with shape-memory alloy (SMA) actuation and designed a SolidWorks, 3D-printed tendon-driven finger to explore prosthetic movement.",
+    "summary": "A prosthetic-finger concept connecting forearm muscle-signal processing, shape-memory alloy (SMA) actuation, and a SolidWorks-designed, 3D-printed tendon mechanism.",
     "tools": [
       "SolidWorks",
       "CAD",
@@ -977,7 +977,7 @@
         "caption": "Original overlay of membrane responses after fixed-tilt parameters were matched to the selected phase durations."
       }
     ],
-    "summary": "I used MATLAB to investigate two cardiac-device questions: how LVAD support changes circulation, and how biphasic shock timing changes modeled cardiac membrane response.",
+    "summary": "Two MATLAB cardiac-device studies exploring how LVAD support changes circulation and how biphasic shock timing changes modeled cardiac membrane response.",
     "tools": [
       "MATLAB",
       "Cardiovascular modeling",

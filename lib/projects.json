@@ -78,10 +78,6 @@
         "href": "https://github.com/malakalhanafi02/Autonomous-Lawnmower"
       },
       {
-        "label": "Watch simulation walkthrough",
-        "href": "https://drive.google.com/file/d/1WV4yyKTy9lSwmz7GJ16YfoIyf3QvnkAL/view"
-      },
-      {
         "label": "Western News · Design Day feature",
         "href": "https://news.westernu.ca/2026/04/western-engineering-design-day-2026/"
       },
@@ -119,8 +115,12 @@
       }
     ],
     "demo": "mower",
-    "videoLink": "https://drive.google.com/file/d/1WV4yyKTy9lSwmz7GJ16YfoIyf3QvnkAL/view",
-    "featured": true
+    "featured": true,
+    "video": {
+      "src": "/media/mower-simulation.mp4",
+      "caption": "Autonomous mower simulation walkthrough showing the integrated robotic system in its simulated environment.",
+      "poster": "/gallery/mower-coverage.webp"
+    }
   },
   {
     "slug": "miniature-c-arm",
@@ -483,15 +483,14 @@
         "text": "I tested the electrical SMA actuator and the printed finger as separate parts of the project. In the finger video, I pull the tendon manually to simulate SMA contraction. The muscle-triggered bendable SMA actuator was tested separately. Together, the work connected biosignal conditioning, thermal actuator control and prosthetic mechanism design, and showed how cooling time and limited actuator travel constrain movement."
       }
     ],
-    "image": "/gallery/finger-concept.webp",
-    "imageAlt": "Concept illustration of a tendon-driven prosthetic finger and muscle-signal actuation.",
+    "image": "/gallery/finger-prototype.webp",
+    "imageAlt": "The printed three-link finger used to test tendon-driven curling and passive return.",
     "video": {
       "src": "/media/finger-actuation.mp4?v=2",
       "caption": "Tendon-driven finger demonstration: a manual wire pull simulates SMA contraction, curling the printed finger before it returns on release.",
       "poster": "/gallery/finger-prototype.webp"
     },
-    "featured": true,
-    "coverCaption": "Concept illustration of tendon-driven finger actuation; original prototype photographs and test footage appear below."
+    "featured": true
   },
   {
     "slug": "fault-aware-cooperation",
@@ -849,6 +848,10 @@
     "color": "paper",
     "sections": [
       {
+        "title": "Full-path simulation",
+        "text": "I implemented and tested the manipulator’s planned trajectory in simulation. The recorded demonstration shows the six-axis arm completing the full path, bringing the kinematic model and trajectory planning together in motion."
+      },
+      {
         "title": "The task",
         "text": "We modeled a six-degree-of-freedom CrustCrawler arm for a bin-picking application, then planned end-effector motion around obstacles in the workspace."
       },
@@ -886,7 +889,12 @@
     ],
     "image": "/gallery/robot-arm-path-one.webp",
     "imageAlt": "Planned end-effector path around modeled spherical obstacles.",
-    "featured": true
+    "featured": true,
+    "video": {
+      "src": "/media/robot-arm-full-path.mp4",
+      "caption": "Full six-axis robot-arm path simulation, showing the manipulator following the planned trajectory.",
+      "poster": "/gallery/robot-arm-path-one.webp"
+    }
   },
   {
     "id": "P27",
@@ -1033,15 +1041,14 @@
       }
     ],
     "featured": true,
-    "image": "/gallery/ecg-venture-concept.webp",
-    "imageAlt": "Concept illustration for AI-powered ECG wearable venture study.",
+    "image": "/gallery/ecg-opportunity.webp",
+    "imageAlt": "A page from my emerging-opportunity report outlining the proposed product ecosystem.",
     "links": [
       {
         "label": "Open report preview",
         "href": "/gallery/ecg-opportunity.webp"
       }
-    ],
-    "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
+    ]
   },
   {
     "id": "P38",

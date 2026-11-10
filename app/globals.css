@@ -36,3 +36,5 @@
 @media(max-width:380px){.credential-group:has(.credential-description) .credential-grid{grid-template-columns:1fr}}
 
 .section .work-photo-strip{margin-bottom:0}.section .work-photo-strip+.discipline-links{margin-top:36px}.project-image img[src*="concept"]{object-fit:cover;background:var(--sand)}
+
+.teaching-class-photo{display:block;max-width:440px;justify-self:end}.teaching-class-photo img{width:100%;max-height:530px;object-fit:contain;background:var(--sand)}.teaching-classroom{display:grid;grid-template-columns:minmax(240px,680px) 1fr;align-items:end;gap:30px;margin-bottom:50px}.teaching-classroom img{width:100%;max-height:650px;object-fit:contain;object-position:left;background:var(--sand)}.teaching-classroom figcaption{font-size:13px;line-height:1.8;color:var(--muted);max-width:300px}.project-video video{width:100%;max-height:760px;object-fit:contain;background:#17121b}@media(max-width:760px){.teaching-class-photo{justify-self:center;max-width:100%}.teaching-class-photo img{max-height:540px}.teaching-classroom{grid-template-columns:1fr;gap:15px}.teaching-classroom img{max-height:580px}}

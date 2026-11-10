@@ -502,7 +502,7 @@
     "eyebrow": "Fault-aware cooperative sensing and trust",
     "category": "kaust",
     "year": "2026–present",
-    "summary": "Researching how cooperative autonomous vehicles handle faulty and compromised sensor data, reviewing and comparing published approaches to define system models and evaluation plans for testing reliability and security.",
+    "summary": "I’m currently mapping how fault diagnosis, robust aggregation, and trust-aware cooperation fit together, considering differences between sensors and practical communication and computing limits.",
     "role": "Research formulation, literature review, system modeling, and evaluation planning",
     "status": "Ongoing research · more on this soon",
     "tools": [],
@@ -1114,7 +1114,6 @@
     "featured": true,
     "image": "/gallery/farmerconnect-concept.webp",
     "imageAlt": "Concept illustration for FarmerConnect business plan.",
-    "links": [],
     "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
   },
   {
@@ -1244,6 +1243,7 @@
     ],
     "image": "/gallery/smart-methods-award-portrait.webp",
     "imageAlt": "Malak holding her Smart Methods certificate and recognition awards.",
+    "coverCaption": "At the Smart Methods recognition event with my certificate and awards.",
     "featured": true,
     "links": [
       {

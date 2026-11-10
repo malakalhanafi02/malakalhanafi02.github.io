@@ -1104,27 +1104,30 @@
         "caption": "Original FarmerConnect app screen mockup."
       }
     ],
-    "summary": "A FarmerConnect venture plan and PowerPoint pitch supported by a Lean Canvas, market research, and app-interface mockups.",
+    "summary": "A local-produce marketplace concept combining customer segmentation, a Lean Canvas, revenue planning, app mockups, and an AI-assisted recommendation idea.",
     "tools": [
       "Microsoft PowerPoint",
-      "Business planning",
       "Lean Canvas",
+      "Customer segmentation",
       "Value proposition design",
       "Market research",
+      "Revenue model design",
+      "App interface mockups",
+      "AI use-case design",
       "Pitch development"
     ],
     "sections": [
       {
         "title": "The venture concept",
-        "text": "FarmerConnect was a venture concept for connecting local farms with customers looking for fresh produce. The business-plan presentation considered customer groups, marketing channels, partnerships, and how an app could support product discovery and communication."
+        "text": "FarmerConnect was an app concept connecting local farmers with people buying fresh produce. I helped define customer segments, possible revenue streams, and the value proposition for both farmers and shoppers."
       },
       {
-        "title": "Design and planning work",
-        "text": "The original app mockups show a produce-discovery homepage, search and filtering controls, favorites, messages, a shopping basket, and notifications. These screens are design concepts accompanying the business plan rather than a deployed marketplace."
+        "title": "App and AI concept",
+        "text": "I helped develop app designs for discovering produce, filtering choices, saving favorites, messaging, and managing a shopping basket. We proposed AI-assisted recommendations that could use a shopper’s preferences, budget, and available produce to surface relevant options. This was a proposed feature in the venture plan, not a deployed recommendation system."
       },
       {
-        "title": "Business plan and communication",
-        "text": "The team developed FarmerConnect through a business plan, Lean Canvas and PowerPoint pitch. The materials explain the proposed customer problem, target users, value proposition and operating model, supported by app-interface mockups. These are venture-planning and communication deliverables rather than evidence of an operated marketplace."
+        "title": "Business plan and pitch",
+        "text": "I contributed to the Lean Canvas, market research, partnership and channel planning, and the PowerPoint pitch. The original app mockups and business materials show how we translated a customer need into a product concept and operating model."
       }
     ],
     "featured": true,
@@ -1144,27 +1147,30 @@
     "role": "Team consulting project · with Elijah Cook",
     "color": "paper",
     "gallery": [],
-    "summary": "A team consulting presentation applying SWOT and external-market analysis to AutoPicker’s vehicle-service business proposition.",
+    "summary": "A consulting study of a vehicle pickup and return service, with competitive analysis, garage partnership options, and a proposed AI booking assistant.",
     "tools": [
       "Microsoft PowerPoint",
       "SWOT analysis",
+      "VRIO analysis",
+      "Competitive analysis",
       "External environment analysis",
-      "Business strategy",
-      "Market analysis",
+      "Market research",
+      "Partnership strategy",
+      "AI use-case design",
       "Consulting presentations"
     ],
     "sections": [
       {
         "title": "The business case",
-        "text": "Our team analyzed AutoPicker, a proposed service for taking a customer’s vehicle to and from an auto-service garage. We considered the company’s capabilities, its position in the gig economy, and the operational decisions needed to develop the business."
+        "text": "AutoPicker was a proposed service that would pick up a customer’s vehicle for a garage appointment and return it after service. I assessed its competitive position, operating model, and the market conditions affecting adoption."
       },
       {
         "title": "Analysis and recommendations",
-        "text": "The presentation used internal capability assessment, VRIO, and SWOT analysis to connect the business model with practical recommendations. We proposed clarifying the operating model, developing more independent internal systems, and considering partnerships with garages to connect existing customer trust with AutoPicker’s technology."
+        "text": "I used SWOT, VRIO, and external-market analysis to evaluate AutoPicker’s capabilities and its position in the vehicle-service market. Our recommendations included clarifying the operating model and exploring partnerships with garages, where existing customer relationships could support adoption."
       },
       {
-        "title": "Consulting methods and deliverables",
-        "text": "Our consulting presentation examined AutoPicker’s vehicle-service proposition, target market and external environment. We used SWOT and market analysis to organize strengths, weaknesses, opportunities and threats, then communicated the team’s findings and recommendations in a PowerPoint presentation."
+        "title": "AI booking concept",
+        "text": "I outlined an AI booking assistant that could turn a customer’s natural-language request into structured appointment details for the service workflow. This was a proposed use case in the consulting work, not a deployed assistant."
       }
     ],
     "featured": true,

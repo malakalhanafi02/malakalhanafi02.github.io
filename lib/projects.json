@@ -86,8 +86,8 @@
         "href": "https://news.westernu.ca/2026/04/western-engineering-design-day-2026/"
       },
       {
-        "label": "Western Engineering · Design Day feature",
-        "href": "https://www.eng.uwo.ca/media/news/2026/From-concept-to-impact-Western-Engineering-students-shine-at-Design-Day.html"
+        "label": "LEDC · Design Day coverage",
+        "href": "https://www.ledc.com/news/western-engineering-students-showcase-innovative-designs-products"
       }
     ],
     "id": "P01",
@@ -1181,6 +1181,14 @@
       {
         "src": "/gallery/smart-methods-servo-circuit.webp",
         "caption": "Six-servo Arduino wiring simulation with an external power supply."
+      },
+      {
+        "src": "/gallery/smart-methods-award-portrait.webp",
+        "caption": "At the Smart Methods recognition event with my certificate and awards."
+      },
+      {
+        "src": "/gallery/smart-methods-best-engineer-award.webp",
+        "caption": "Smart Methods Best Engineer 2024 award and recognition plaque."
       }
     ],
     "summary": "Smart Methods internship work spanning SolidWorks/STL fabrication, servo mechanisms, Python/OpenCV interfaces, JavaScript web work, and speech-to-text prototypes.",

@@ -26,8 +26,8 @@ export const credentials:Credential[]=[
  {id:'C7',title:'Laboratory Safety Training',issuer:'KAUST',date:'11 July 2023',group:'kaust',image:'/credentials/C7.webp'},
  {id:'C8',title:'Hazardous Waste Training',issuer:'KAUST',date:'11 July 2023',group:'kaust',image:'/credentials/C8.webp'},
  {id:'C9',title:'Emergency Incident Preparedness',issuer:'KAUST',date:'11 July 2023',group:'kaust',image:'/credentials/C9.webp'},
- {id:'C10',title:'Dean’s Honour List · 2023–2024',issuer:'Western University',date:'October 2026',group:'honours',image:'/credentials/C10.webp'},
- {id:'C14',title:'Dean’s Honour List · 2024–2025',issuer:'Western University',date:'October 2026',group:'honours',image:'/credentials/C14.webp'},
+ {id:'C10',title:'Dean’s Honour List',issuer:'Western University',date:'October 2026',group:'honours',image:'/credentials/C10.webp'},
+ {id:'C14',title:'Dean’s Honour List',issuer:'Western University',date:'October 2026',group:'honours',image:'/credentials/C14.webp'},
  {id:'C12',title:'Engineering Design Day — Honourable Mention',issuer:'Western University · team capstone',date:'2026',group:'honours',image:'/gallery/mower-honourable-mention.webp'},
  {id:'C13',title:'Top Engineer Intern',issuer:'Smart Methods',date:'2024',group:'honours',image:'/gallery/smart-methods-award-portrait.webp',images:['/gallery/smart-methods-award-portrait.webp','/gallery/smart-methods-best-engineer-award.webp']},
 ];

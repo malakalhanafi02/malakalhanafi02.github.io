@@ -1,0 +1,2 @@
+import Link from '@/components/Link';
+export default function Footer(){return <footer className="site-footer wrap"><div><Link href="/" className="footer-name">Malak Al-Hanafi</Link><p>Mechatronics & AI Systems Engineering</p></div><div className="footer-links"><a href="mailto:malakalhanafi@outlook.com">Email ↗</a><a href="https://linkedin.com/in/malak-al-hanafi" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/malakalhanafi02" target="_blank" rel="noreferrer">GitHub ↗</a></div><small>© 2026 Malak Al-Hanafi</small></footer>}

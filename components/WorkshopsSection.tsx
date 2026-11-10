@@ -1,8 +1,10 @@
 import {ArrowUpRight} from 'lucide-react';
 
 const events=[
- {title:'AWS Academy at LEAP',image:'/gallery/aws-academy-leap.png',alt:'AWS AI Training Academy booth at LEAP',text:'I attended an AWS Academy session at LEAP on retrieval-augmented generation (RAG), guardrails, and building agentic AI with Amazon Bedrock.',href:'https://www.linkedin.com/company/amazon-web-services/',link:'Amazon Web Services'},
- {title:'IBM TechXchange Toronto Z Council',image:'/gallery/ibm-techxchange-workshop.webp',alt:'Participants in an IBM TechXchange workshop',text:'I joined the Western Cyber Society visit to IBM TechXchange Toronto Z Council, where we explored mainframes and worked through an IBM Db2 API workshop.'},
+ {title:'AWS Academy: agentic AI',image:'/gallery/aws-academy-leap.png',alt:'AWS AI Training Academy venue',text:'I attended an AWS Academy session on retrieval-augmented generation (RAG), guardrails, and building agentic AI with Amazon Bedrock.',href:'https://aws.amazon.com/bedrock/',link:'Amazon Bedrock'},
+ {title:'IBM TechXchange Toronto Z Council',image:'/gallery/ibm-techxchange-workshop.webp',alt:'Participants in an IBM TechXchange workshop',text:'At IBM TechXchange Toronto Z Council, I explored mainframes and completed a hands-on IBM Db2 API workshop.'},
+ {title:'KAUST data science workshop',image:'/gallery/kaust-data-science-workshop.webp',alt:'Introduction to Shell for Data Scientists workshop at KAUST',text:'I attended the Visualization Core Lab introduction to shell for data scientists, part of its data science workshop series.'},
+ {title:'MVP and go-to-market workshop',image:'/gallery/mvp-go-to-market-workshop.webp',alt:'Workshop presentation on validating an idea and finding first customers',text:'At a Western Engineering Innovation & Entrepreneurship Club workshop, I studied MVP validation, business models, go-to-market planning, and finding initial customers.'},
  {title:'Women in Tech Summit',image:'/gallery/women-in-tech-summit.webp',alt:'Speaker presenting at the Women in Tech Summit',text:'I attended the Women in Tech Summit and heard perspectives on careers and leadership in technology.'}
 ];
 

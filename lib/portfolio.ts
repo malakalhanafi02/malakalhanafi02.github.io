@@ -2,7 +2,7 @@ import projectData from './projects.json';
 import groupData from './groups.json';
 import teachingData from './teaching.json';
 export type Media={src:string;caption:string;kind?:string};
-export type Project={id:string;slug:string;title:string;eyebrow:string;category:string;kaust:boolean;year:string;summary:string;role:string;status:string;tools:string[];sections:{title:string;text:string}[];gallery:Media[];image?:string;imageAlt?:string;featured?:boolean;pendingMedia?:string;activities?:string[];metrics?:{value:string;label:string}[];links?:{label:string;href:string}[];demo?:string;video?:Media&{poster?:string};videoLink?:string};
+export type Project={id:string;slug:string;title:string;eyebrow:string;category:string;kaust:boolean;year:string;summary:string;role:string;status:string;tools:string[];sections:{title:string;text:string}[];gallery:Media[];image?:string;imageAlt?:string;coverCaption?:string;featured?:boolean;pendingMedia?:string;activities?:string[];metrics?:{value:string;label:string}[];links?:{label:string;href:string}[];demo?:string;video?:Media&{poster?:string};videoLink?:string};
 export const projects=projectData as Project[];
 export const groups=groupData;
 export const teachingLabs=teachingData;

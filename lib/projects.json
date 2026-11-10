@@ -202,7 +202,7 @@
     "category": "robotics",
     "year": "2025",
     "summary": "ROS 2 / Nav2 indoor robot navigation with LiDAR mapping, Python/OpenCV hazard detection, and pyzbar barcode arrival checks.",
-    "role": "Team course project · AISE 4020",
+    "role": "Team project · AISE 4020",
     "status": "Prototype",
     "tools": [
       "Python",
@@ -278,7 +278,7 @@
     "category": "biomedical",
     "year": "2026",
     "summary": "A SolidWorks medical-device design study combining fiber-optic light delivery, LED-driver selection, thermal analysis, and optical power budgeting.",
-    "role": "Medical and assistive devices course project · MME 4470",
+    "role": "Medical and assistive devices project · MME 4470",
     "status": "Design study",
     "tools": [
       "SolidWorks",
@@ -419,8 +419,8 @@
     "category": "biomedical",
     "kaust": false,
     "year": "2026",
-    "status": "Laboratory prototype",
-    "role": "Medical and Assistive Devices · MME 4470b · Assignment 3",
+    "status": "Functional prototype",
+    "role": "Biosignal processing, actuator circuits and prosthetic mechanism design",
     "color": "paper",
     "gallery": [
       {
@@ -439,7 +439,7 @@
         "kind": "image"
       }
     ],
-    "summary": "A prosthetic-actuation lab connecting an earlier muscle-signal (sEMG) circuit to a shape-memory alloy (SMA) actuator, alongside a SolidWorks-designed, 3D-printed tendon-driven finger.",
+    "summary": "I connected muscle-signal processing with shape-memory alloy (SMA) actuation and designed a SolidWorks, 3D-printed tendon-driven finger to explore prosthetic movement.",
     "tools": [
       "SolidWorks",
       "CAD",
@@ -459,38 +459,39 @@
       "Breadboard prototyping",
       "Tendon-driven mechanisms",
       "Flexure joints",
-      "Laboratory testing"
+      "Prototype testing"
     ],
     "sections": [
       {
-        "title": "Why build a finger?",
-        "text": "This Medical and Assistive Devices lab explored how muscle activity could control tendon-like actuation for prosthetic and wearable robotic devices. It built on Assignment 2, where we developed a surface electromyography (sEMG) circuit to measure electrical activity from forearm muscles. The printed finger gave us a mechanical model for testing how a small tendon pull could produce finger-like curling and return motion."
+        "title": "Why I built a finger",
+        "text": "I wanted to connect a muscle-control signal to a mechanism that could reproduce finger movement. Building on my earlier surface electromyography (sEMG) circuit, which measured electrical activity from forearm muscles, I explored how a compact actuator could generate tendon-like motion for prosthetic and wearable robotic devices. I designed a printed finger to test how a small tendon pull could create curling and return motion."
       },
       {
-        "title": "What SMA means",
-        "text": "SMA stands for shape-memory alloy. In this lab, thin nickel-titanium wire contracted when heated by electrical current. After power was removed, cooling and an opposing restoring force allowed recovery. That contraction can act like an artificial muscle pulling a tendon. Because the movement is small and depends on heating and cooling, both the drive circuit and the finger geometry matter."
+        "title": "How shape-memory alloy creates movement",
+        "text": "SMA stands for shape-memory alloy. I used thin nickel-titanium wire that contracts when heated by electrical current. Removing power lets it cool, while an opposing restoring force supports recovery. That contraction can pull a tendon like an artificial muscle. The small available movement and the time needed for heating and cooling shaped both the circuit and the mechanism design."
       },
       {
-        "title": "From the earlier sEMG lab to muscle-controlled actuation",
-        "text": "We first built and tested a breadboard driver using a 555 timer oscillator, an IRLD024 MOSFET and a 1N4007 diode. Its on/off cycle gave the bendable SMA actuator time to heat and cool. We then connected the processed muscle signal from Assignment 2: an INA126 instrumentation amplifier, high-pass and low-pass filtering, and a precision rectifier. A forearm contraction raised the signal enough to switch current through the SMA actuator; relaxing the muscle removed the trigger."
+        "title": "Connecting muscle signals to actuation",
+        "text": "Working with my project partners, I built and tested a breadboard driver using a 555 timer oscillator, an IRLD024 MOSFET and a 1N4007 diode. Its on/off cycle gave the bendable SMA actuator time to heat and cool. I then connected the processed muscle signal from my earlier sEMG work: an INA126 instrumentation amplifier, high-pass and low-pass filters, and a precision rectifier. A forearm contraction raised the signal enough to switch current through the SMA actuator; relaxing the muscle removed the trigger."
       },
       {
-        "title": "Designing and testing the printed mechanism",
-        "text": "The three-link finger was modelled in SolidWorks, exported as an STL file and 3D printed. It represents the three segments of an index finger, with thinner flexure regions at the joints and a tendon routed along the bending side. Pulling the tendon curled the finger; releasing it let the printed flexures restore a straighter shape. This tested whether the mechanism could turn a small pull into useful joint motion."
+        "title": "Designing the tendon-driven mechanism",
+        "text": "I modelled the three-link finger in SolidWorks, exported an STL file and fabricated the part by 3D printing. Its three segments represent the bones of an index finger, with thinner flexure regions at the joints and a tendon routed along the bending side. Pulling the tendon curled the finger; releasing it let the printed flexures restore a straighter shape. I used this mechanism to test how a small pull could produce useful joint motion."
       },
       {
-        "title": "What the demonstration shows",
-        "text": "The electrical SMA-actuator experiment and the printed-finger test were separate parts of the assignment. In the finger video, the tendon is pulled manually to simulate SMA contraction. The report documents muscle-triggered operation of the bendable SMA actuator separately. Together, the experiments connected biosignal conditioning, thermal actuator control and prosthetic mechanism design, while showing why cooling time and limited actuator travel constrain the design."
+        "title": "What I demonstrated",
+        "text": "I tested the electrical SMA actuator and the printed finger as separate parts of the project. In the finger video, I pull the tendon manually to simulate SMA contraction. The muscle-triggered bendable SMA actuator was tested separately. Together, the work connected biosignal conditioning, thermal actuator control and prosthetic mechanism design, and showed how cooling time and limited actuator travel constrain movement."
       }
     ],
-    "image": "/gallery/finger-prototype.webp",
-    "imageAlt": "The printed finger prototype in the laboratory.",
+    "image": "/gallery/finger-concept.webp",
+    "imageAlt": "Concept illustration of a tendon-driven prosthetic finger and muscle-signal actuation.",
     "video": {
       "src": "/media/finger-actuation.mp4?v=2",
       "caption": "Tendon-driven finger demonstration: a manual wire pull simulates SMA contraction, curling the printed finger before it returns on release.",
       "poster": "/gallery/finger-prototype.webp"
     },
-    "featured": true
+    "featured": true,
+    "coverCaption": "Concept illustration of tendon-driven finger actuation; original prototype photographs and test footage appear below."
   },
   {
     "slug": "fault-aware-cooperation",
@@ -692,7 +693,7 @@
     "category": "robotics",
     "year": "2025",
     "summary": "Python coursework using AIF360, fairlearn, DoWhy, diffprivlib, TensorFlow, and scikit-learn to investigate fairness, causality, and privacy tradeoffs.",
-    "role": "Individual lab sequence · AISE 3020",
+    "role": "Individual fairness, causality and privacy investigations",
     "status": "Coursework",
     "tools": [
       "Python",
@@ -724,12 +725,12 @@
         "text": "A model can perform well on average while producing different error patterns across groups. Removing a sensitive feature alone does not remove information carried by correlated features."
       },
       {
-        "title": "The lab sequence",
-        "text": "I examined classification disparities in COMPAS data, explored fairness interventions, built causal-analysis exercises, and tested differentially private regression models. The labs connect evaluation choices with explicit assumptions about fairness and privacy."
+        "title": "Fairness and privacy investigations",
+        "text": "I examined classification disparities in COMPAS data, explored fairness interventions, built causal-analysis exercises, and tested differentially private regression models. These investigations connect evaluation choices with explicit assumptions about fairness and privacy."
       },
       {
         "title": "Libraries and analysis workflow",
-        "text": "The lab sequence used pandas / NumPy and scikit-learn for data preparation, classification and evaluation, with Matplotlib for result plots. AIF360 and fairlearn supported group-fairness metrics and mitigation experiments, including Exponentiated Gradient Reduction and adversarial debiasing with TensorFlow. DoWhy supported causal modeling and refutation checks. In the privacy work, diffprivlib linear and logistic regression models were compared with scikit-learn baselines across privacy-budget settings. These were coursework investigations of tradeoffs, rather than a deployed decision system."
+        "text": "I used pandas / NumPy and scikit-learn for data preparation, classification and evaluation, with Matplotlib for result plots. AIF360 and fairlearn supported group-fairness metrics and mitigation experiments, including Exponentiated Gradient Reduction and adversarial debiasing with TensorFlow. DoWhy supported causal modeling and refutation checks. In the privacy work, diffprivlib linear and logistic regression models were compared with scikit-learn baselines across privacy-budget settings. These were modeling investigations of tradeoffs, rather than a deployed decision system."
       }
     ],
     "id": "P14",
@@ -829,7 +830,7 @@
     "category": "robotics",
     "year": "2025",
     "summary": "MATLAB kinematics and potential-field motion planning for a six-axis manipulator, using DH parameters, Jacobians, and obstacle-avoidance parameter sweeps.",
-    "role": "Partner course project · MSE 4401",
+    "role": "Partner project · MSE 4401",
     "status": "Course project",
     "tools": [
       "MATLAB",
@@ -857,7 +858,7 @@
       },
       {
         "title": "Limits and related work",
-        "text": "Representative planned paths avoided modeled spherical obstacles. The point-mass approximation and local minima limit what the simulation establishes. Related Baxter labs explored PID and computed-torque control on a seven-axis robot."
+        "text": "Representative planned paths avoided modeled spherical obstacles. The point-mass approximation and local minima limit what the simulation establishes. Related Baxter work explored PID and computed-torque control on a seven-axis robot."
       },
       {
         "title": "Analytical modeling and planner implementation",
@@ -890,13 +891,13 @@
   {
     "id": "P27",
     "slug": "lvad-modeling",
-    "title": "LVAD and cardiovascular modeling",
-    "eyebrow": "LVAD and cardiovascular modeling",
+    "title": "Cardiovascular modeling & cardiac-device simulations",
+    "eyebrow": "Cardiovascular modeling & cardiac-device simulations",
     "category": "biomedical",
     "kaust": false,
     "year": "2025",
     "status": "Modeling study",
-    "role": "Team biomedical systems analysis project · ECE 4455A",
+    "role": "Cardiovascular simulation and analysis · team project contributions",
     "color": "paper",
     "gallery": [
       {
@@ -914,9 +915,17 @@
       {
         "src": "/gallery/lvad-controller.webp",
         "caption": "The team’s controller-law overlay on the modeled exercise condition."
+      },
+      {
+        "src": "/gallery/defib-response.webp",
+        "caption": "Original source-voltage and membrane-voltage response for a tuned-duration biphasic waveform."
+      },
+      {
+        "src": "/gallery/defib-matched-waveforms.webp",
+        "caption": "Original overlay of membrane responses after fixed-tilt parameters were matched to the selected phase durations."
       }
     ],
-    "summary": "MATLAB cardiovascular and LVAD simulations using Windkessel and elastance models, pressure–volume analysis, and physiological feedback-control investigations.",
+    "summary": "I used MATLAB to investigate two cardiac-device questions: how LVAD support changes circulation, and how biphasic shock timing changes modeled cardiac membrane response.",
     "tools": [
       "MATLAB",
       "Cardiovascular modeling",
@@ -927,90 +936,62 @@
       "Pressure and flow waveforms",
       "Batch simulation",
       "Physiological feedback control",
-      "Parameter sweeps"
+      "Parameter sweeps",
+      "Biphasic exponential waveforms",
+      "Cardiac membrane modeling",
+      "Waveform tilt",
+      "Pulse-duration tuning",
+      "Voltage-response visualization"
     ],
     "sections": [
       {
-        "title": "The question",
+        "title": "Two cardiac-device questions",
+        "text": "I investigated cardiovascular support and cardiac electrical stimulation through two related MATLAB studies. The LVAD work examined blood flow, ventricular loading and pump control. The defibrillation work examined source waveforms and cardiac membrane voltage. They share a modeling and parameter-analysis approach, with separate physiological models and results."
+      },
+      {
+        "title": "LVAD · The question",
         "text": "A left ventricular assist device supplies flow alongside a weakened heart, but stronger pump support also changes the pressures and workload of the native ventricle. Our study examined this interaction under resting and exercise conditions using a simplified cardiovascular model."
       },
       {
-        "title": "Comparing assisted and unassisted circulation",
+        "title": "LVAD · Comparing assisted and unassisted circulation",
         "text": "We varied the pump contribution and compared total systemic flow, ventricular pressure-volume loops, and ventricular and arterial pressure traces. The outputs show how increasing support can unload the ventricle until the pump supplies nearly all of the flow. Comparing the pressure traces with and without assistance helped explain when the aortic valve could open and why pulsatility changed."
       },
       {
-        "title": "Physiologically responsive control",
+        "title": "LVAD · Physiologically responsive control",
         "text": "We then overlaid a Starling-like supervisory control law on the relationship between pump flow and end-diastolic pressure. The aim was to select a resting operating point and examine how that same controller responded to the increased demand represented by the exercise model, while retaining a contribution from the native heart."
       },
       {
-        "title": "Interpreting the model",
+        "title": "LVAD · Interpreting the model",
         "text": "The report compares the model’s baseline filling-pressure behavior with a reference example and discusses the consequences of that mismatch. The investigation treats the outputs as simulation results: the simplified circulation, fixed parameters, and limited physiological feedback restrict how far the controller findings can be generalized."
       },
       {
-        "title": "Simulation and physiological interpretation",
+        "title": "LVAD · Simulation and physiological interpretation",
         "text": "I used MATLAB scripts to investigate ventricular assistance by varying pump flow and comparing pressure, flow and ventricular-volume waveforms. The supplied cardiovascular model uses a Windkessel representation and time-varying ventricular elastance. Batch runs and pressure–volume analysis helped explain how increasing LVAD support changes the ventricle’s contribution to circulation. A subsequent control investigation related pump flow to end-diastolic pressure, keeping the model’s simplifications and validation limits explicit."
+      },
+      {
+        "title": "Defibrillation · Waveform timing and membrane response",
+        "text": "The investigation compared two ways of defining a biphasic exponential waveform: ending each phase at a specified voltage tilt, or choosing its duration directly. A cardiac-cell electrical model connected the applied source waveform with the resulting membrane-voltage response."
+      },
+      {
+        "title": "Defibrillation · What we investigated",
+        "text": "We examined the source time constant and energy-storage assumptions, swept the membrane time constant, and compared the membrane response at the end of each phase. The first phase was assessed for depolarization and the second for the residual membrane response after the polarity reversal."
+      },
+      {
+        "title": "Defibrillation · Matching the two parameterizations",
+        "text": "The final comparison converted chosen phase durations into their corresponding tilt values and ran both formulations with the same source assumptions. The resulting membrane-voltage curves nearly coincide, illustrating that matched fixed-tilt and tuned-duration settings can describe the same underlying exponential waveform."
+      },
+      {
+        "title": "Defibrillation · Project scope",
+        "text": "The deliverables were MATLAB calculations, waveform overlays, and a written interpretation of the electrical model. These are educational simulation results rather than device testing or clinical validation."
+      },
+      {
+        "title": "Defibrillation · Waveform construction and response analysis",
+        "text": "The MATLAB study constructed biphasic exponential source waveforms and examined their modeled cardiac-cell membrane response. I investigated waveform tilt, phase duration and timing, using response plots and parameter comparisons to explain how a change at the source altered membrane voltage. The report figures distinguish the applied shock waveform from the modeled membrane response; the analysis does not establish a clinical defibrillation protocol."
       }
     ],
     "featured": true,
     "image": "/gallery/lvad-total-flow.webp",
     "imageAlt": "Total modeled flow versus LVAD flow for resting and exercising conditions; the marked bends indicate where pump flow begins to dominate."
-  },
-  {
-    "id": "P28",
-    "slug": "defibrillation-waveforms",
-    "title": "Biphasic defibrillation waveforms",
-    "eyebrow": "Biphasic defibrillation waveforms",
-    "category": "biomedical",
-    "kaust": false,
-    "year": "2025",
-    "status": "Simulation study",
-    "role": "Team cardiac electrophysiology investigation · ECE 4455A",
-    "color": "paper",
-    "gallery": [
-      {
-        "src": "/gallery/defib-response.webp",
-        "caption": "Original source-voltage and membrane-voltage response for a tuned-duration biphasic waveform."
-      },
-      {
-        "src": "/gallery/defib-matched-waveforms.webp",
-        "caption": "Original overlay of membrane responses after fixed-tilt parameters were matched to the selected phase durations."
-      }
-    ],
-    "summary": "MATLAB modeling of biphasic exponential shocks and cardiac membrane response, exploring waveform tilt, phase timing, and pulse duration.",
-    "tools": [
-      "MATLAB",
-      "Biphasic exponential waveforms",
-      "Cardiac membrane modeling",
-      "Waveform tilt",
-      "Pulse-duration tuning",
-      "Parameter sweeps",
-      "Voltage-response visualization"
-    ],
-    "sections": [
-      {
-        "title": "Waveform timing and membrane response",
-        "text": "The investigation compared two ways of defining a biphasic exponential waveform: ending each phase at a specified voltage tilt, or choosing its duration directly. A cardiac-cell electrical model connected the applied source waveform with the resulting membrane-voltage response."
-      },
-      {
-        "title": "What we investigated",
-        "text": "We examined the source time constant and energy-storage assumptions, swept the membrane time constant, and compared the membrane response at the end of each phase. The first phase was assessed for depolarization and the second for the residual membrane response after the polarity reversal."
-      },
-      {
-        "title": "Matching the two parameterizations",
-        "text": "The final comparison converted chosen phase durations into their corresponding tilt values and ran both formulations with the same source assumptions. The resulting membrane-voltage curves nearly coincide, illustrating that matched fixed-tilt and tuned-duration settings can describe the same underlying exponential waveform."
-      },
-      {
-        "title": "Project scope",
-        "text": "The deliverables were MATLAB calculations, waveform overlays, and a written interpretation of the electrical model. These are educational simulation results rather than device testing or clinical validation."
-      },
-      {
-        "title": "Waveform construction and response analysis",
-        "text": "The MATLAB study constructed biphasic exponential source waveforms and examined their modeled cardiac-cell membrane response. I investigated waveform tilt, phase duration and timing, using response plots and parameter comparisons to explain how a change at the source altered membrane voltage. The report figures distinguish the applied shock waveform from the modeled membrane response; the analysis does not establish a clinical defibrillation protocol."
-      }
-    ],
-    "featured": true,
-    "image": "/gallery/defib-response.webp",
-    "imageAlt": "Original source-voltage and membrane-voltage response for a tuned-duration biphasic waveform."
   },
   {
     "id": "P37",
@@ -1021,7 +1002,7 @@
     "kaust": false,
     "year": "2023",
     "status": "Venture concept",
-    "role": "Engineering entrepreneurship coursework",
+    "role": "Engineering entrepreneurship project",
     "color": "paper",
     "gallery": [
       {
@@ -1040,7 +1021,7 @@
     "sections": [
       {
         "title": "Opportunity report",
-        "text": "The venture-creation assignment examined the problem, intended users, competing approaches, and potential value of an AI-powered ECG wearable."
+        "text": "The venture study examined the problem, intended users, competing approaches, and potential value of an AI-powered ECG wearable."
       },
       {
         "title": "Scope",
@@ -1052,14 +1033,15 @@
       }
     ],
     "featured": true,
-    "image": "/gallery/ecg-opportunity.webp",
-    "imageAlt": "A page from my emerging-opportunity report outlining the proposed product ecosystem.",
+    "image": "/gallery/ecg-venture-concept.webp",
+    "imageAlt": "Concept illustration for AI-powered ECG wearable venture study.",
     "links": [
       {
         "label": "Open report preview",
         "href": "/gallery/ecg-opportunity.webp"
       }
-    ]
+    ],
+    "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
   },
   {
     "id": "P38",
@@ -1070,7 +1052,7 @@
     "kaust": false,
     "year": "2023",
     "status": "Business plan",
-    "role": "Entrepreneurship coursework",
+    "role": "Entrepreneurship project",
     "color": "paper",
     "gallery": [
       {
@@ -1098,7 +1080,7 @@
     "sections": [
       {
         "title": "The venture concept",
-        "text": "FarmerConnect was a coursework venture concept for connecting local farms with customers looking for fresh produce. The business-plan presentation considered customer groups, marketing channels, partnerships, and how an app could support product discovery and communication."
+        "text": "FarmerConnect was a venture concept for connecting local farms with customers looking for fresh produce. The business-plan presentation considered customer groups, marketing channels, partnerships, and how an app could support product discovery and communication."
       },
       {
         "title": "Design and planning work",
@@ -1110,14 +1092,15 @@
       }
     ],
     "featured": true,
-    "image": "/gallery/farmerconnect-slides.webp",
-    "imageAlt": "Title slide from the original FarmerConnect business-plan presentation.",
+    "image": "/gallery/farmerconnect-concept.webp",
+    "imageAlt": "Concept illustration for FarmerConnect business plan.",
     "links": [
       {
         "label": "Open presentation preview",
         "href": "/gallery/farmerconnect-slides.webp"
       }
-    ]
+    ],
+    "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
   },
   {
     "id": "P39",
@@ -1128,7 +1111,7 @@
     "kaust": false,
     "year": "2024",
     "status": "Consulting study",
-    "role": "Team consulting coursework · with Elijah Cook",
+    "role": "Team consulting project · with Elijah Cook",
     "color": "paper",
     "gallery": [
       {
@@ -1160,14 +1143,15 @@
       }
     ],
     "featured": true,
-    "image": "/gallery/autopicker-slides.webp",
-    "imageAlt": "Original AutoPicker consulting presentation title slide.",
+    "image": "/gallery/autopicker-concept.webp",
+    "imageAlt": "Concept illustration for AutoPicker consulting project.",
     "links": [
       {
         "label": "Download original presentation (PowerPoint)",
         "href": "/assets/AutoPicker-Presentation.pptx"
       }
-    ]
+    ],
+    "coverCaption": "Concept illustration; original project reports, slides and mockups appear below."
   },
   {
     "id": "P41",

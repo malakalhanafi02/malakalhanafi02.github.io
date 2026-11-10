@@ -5,8 +5,8 @@
     "eyebrow": "Autonomous lawn mower",
     "category": "robotics",
     "year": "2026",
-    "summary": "Python and YOLOv8 perception for a ROS-based autonomous mower, with Roboflow data preparation, PyTorch training, and Gazebo/RViz simulation.",
-    "role": "AI & perception lead · multidisciplinary capstone team",
+    "summary": "A ROS-based autonomous mower combining YOLOv8 perception, LiDAR mapping, localization, coverage planning, motion control, and safety checks; my work spanned perception and autonomy integration.",
+    "role": "AI & perception lead · mapping, planning and autonomy integration",
     "status": "Capstone completed",
     "tools": [
       "Python",
@@ -57,11 +57,11 @@
       },
       {
         "title": "My contribution",
-        "text": "I led AI perception development: preparing image data, training and evaluating YOLOv8 detection and segmentation models, and connecting perception outputs with the wider robotic system. Lawn, boundary, and barrier masks support conservative cut/no-cut reasoning; object detections identify safety-relevant obstacles."
+        "text": "I led AI perception development: preparing image data, training and evaluating YOLOv8 detection and segmentation models, and connecting perception outputs with the wider robotic system. My contribution also extended to LiDAR mapping, localization, coverage planning, motion control, and safety checks, working with the team to connect these parts of the autonomy stack. Lawn, boundary, and barrier masks supported cut/no-cut reasoning, while object detections identified obstacles."
       },
       {
         "title": "How the system fits together",
-        "text": "The team combined vision with LiDAR mapping, localization, coverage planning, motion control, and safety checks. ROS nodes exchange perception and navigation information, while Gazebo and RViz support staged simulation and visualization. The project includes both ROS 1 and ROS 2 development artifacts; the documented final report describes the ROS 1 pipeline."
+        "text": "I worked with the team to combine vision with LiDAR mapping, localization, coverage planning, motion control, and safety checks. ROS nodes exchange perception and navigation information, while Gazebo and RViz support staged simulation and visualization. The project includes both ROS 1 and ROS 2 development artifacts; the documented final report describes the ROS 1 pipeline."
       },
       {
         "title": "Results and limits",
@@ -69,7 +69,7 @@
       },
       {
         "title": "Perception, simulation and integration",
-        "text": "I prepared and labeled vision data in Roboflow and trained Ultralytics YOLOv8 detection and segmentation models with PyTorch. Python and OpenCV supported image processing and the ROS perception interfaces. The team’s ROS pipeline connected occupancy-grid mapping, sensor fusion, coverage planning and motion control; Gazebo and RViz provided simulation and visualization. The repository contains ROS 1 Noetic and ROS 2 development artifacts, while the documented final pipeline uses ROS 1. The browser demonstration runs the exported ONNX segmentation model. The hardware architecture pairs a Jetson Nano with an Arduino Mega; individual model validation and simulation results are distinct from complete outdoor robot validation."
+        "text": "I prepared and labeled vision data in Roboflow and trained Ultralytics YOLOv8 detection and segmentation models with PyTorch. Python and OpenCV supported image processing and the ROS perception interfaces. I also contributed to connecting occupancy-grid mapping, sensor fusion, coverage planning, motion control and safety checks in the team’s ROS pipeline; Gazebo and RViz provided simulation and visualization. The repository contains ROS 1 Noetic and ROS 2 development artifacts, while the documented final pipeline uses ROS 1. The browser demonstration runs the exported ONNX segmentation model. The hardware architecture pairs a Jetson Nano with an Arduino Mega; individual model validation and simulation results are distinct from complete outdoor robot validation."
       }
     ],
     "links": [
@@ -365,8 +365,8 @@
       "Git"
     ],
     "color": "paper",
-    "image": "/gallery/scooper-assembly.webp",
-    "imageAlt": "Full assembly CAD model explicitly labeled in the Scooper team report.",
+    "image": "/gallery/scooper-team.webp",
+    "imageAlt": "Our Scooper Bot team with the assembled gem-sorting rover.",
     "sections": [
       {
         "title": "The challenge",
@@ -389,6 +389,11 @@
     "kaust": false,
     "gallery": [
       {
+        "src": "/gallery/scooper-team.webp",
+        "caption": "Our Scooper Bot team with the assembled gem-sorting rover.",
+        "kind": "image"
+      },
+      {
         "src": "/gallery/scooper-assembly.webp",
         "caption": "Full assembly CAD model explicitly labeled in the Scooper team report.",
         "kind": "image"
@@ -409,18 +414,18 @@
   {
     "id": "P07",
     "slug": "sma-finger",
-    "title": "SMA-actuated printed finger",
-    "eyebrow": "SMA-actuated printed finger",
+    "title": "SMA actuation & tendon-driven finger",
+    "eyebrow": "SMA actuation & tendon-driven finger",
     "category": "biomedical",
     "kaust": false,
-    "year": "Coursework",
+    "year": "2026",
     "status": "Laboratory prototype",
-    "role": "Sensors and actuators laboratory project",
+    "role": "Medical and Assistive Devices · MME 4470b · Assignment 3",
     "color": "paper",
     "gallery": [
       {
         "src": "/gallery/finger-prototype.webp",
-        "caption": "The printed finger prototype in the laboratory.",
+        "caption": "The printed three-link finger used to test tendon-driven curling and passive return.",
         "kind": "image"
       },
       {
@@ -430,40 +435,59 @@
       },
       {
         "src": "/gallery/finger-circuit.webp",
-        "caption": "The accompanying laboratory circuit.",
+        "caption": "Breadboard driver used to control the heating and cooling of the bendable SMA actuator.",
         "kind": "image"
       }
     ],
-    "summary": "A SolidWorks-designed, 3D-printed finger mechanism investigated through shape-memory-alloy actuation, circuit prototyping, and laboratory motion tests.",
+    "summary": "A prosthetic-actuation lab connecting an earlier muscle-signal (sEMG) circuit to a shape-memory alloy (SMA) actuator, alongside a SolidWorks-designed, 3D-printed tendon-driven finger.",
     "tools": [
       "SolidWorks",
       "CAD",
+      "STL export",
       "Dimensioned engineering drawings",
       "3D printing",
       "Shape-memory alloy (SMA)",
-      "Actuator characterization",
-      "Circuit prototyping",
+      "Nickel-titanium (NiTi)",
+      "Surface electromyography (sEMG)",
+      "INA126 instrumentation amplifier",
+      "High-pass and low-pass filters",
+      "Precision rectifier",
+      "555 timer oscillator",
+      "IRLD024 MOSFET",
+      "1N4007 diode",
+      "RC timing circuits",
+      "Breadboard prototyping",
+      "Tendon-driven mechanisms",
+      "Flexure joints",
       "Laboratory testing"
     ],
     "sections": [
       {
-        "title": "Prototype and test",
-        "text": "The assignment combines a printed finger mechanism, actuation analysis, a laboratory circuit, and recorded motion. The available photos show the fabricated parts and test setup."
+        "title": "Why build a finger?",
+        "text": "This Medical and Assistive Devices lab explored how muscle activity could control tendon-like actuation for prosthetic and wearable robotic devices. It built on Assignment 2, where we developed a surface electromyography (sEMG) circuit to measure electrical activity from forearm muscles. The printed finger gave us a mechanical model for testing how a small tendon pull could produce finger-like curling and return motion."
       },
       {
-        "title": "Engineering work",
-        "text": "The submitted work includes a dimensioned drawing and device analysis connecting actuator behavior to the finger mechanism. The video below records the laboratory demonstration."
+        "title": "What SMA means",
+        "text": "SMA stands for shape-memory alloy. In this lab, thin nickel-titanium wire contracted when heated by electrical current. After power was removed, cooling and an opposing restoring force allowed recovery. That contraction can act like an artificial muscle pulling a tendon. Because the movement is small and depends on heating and cooling, both the drive circuit and the finger geometry matter."
       },
       {
-        "title": "Design and laboratory workflow",
-        "text": "The work connected a dimensioned mechanical drawing and SolidWorks model with printed finger components, a shape-memory-alloy actuation investigation and a laboratory circuit. Fabrication and circuit testing were used to investigate how actuator behavior translated into finger motion. The photographs and recorded demonstration show the physical mechanism and test setup; the project is presented as a laboratory prototype."
+        "title": "From the earlier sEMG lab to muscle-controlled actuation",
+        "text": "We first built and tested a breadboard driver using a 555 timer oscillator, an IRLD024 MOSFET and a 1N4007 diode. Its on/off cycle gave the bendable SMA actuator time to heat and cool. We then connected the processed muscle signal from Assignment 2: an INA126 instrumentation amplifier, high-pass and low-pass filtering, and a precision rectifier. A forearm contraction raised the signal enough to switch current through the SMA actuator; relaxing the muscle removed the trigger."
+      },
+      {
+        "title": "Designing and testing the printed mechanism",
+        "text": "The three-link finger was modelled in SolidWorks, exported as an STL file and 3D printed. It represents the three segments of an index finger, with thinner flexure regions at the joints and a tendon routed along the bending side. Pulling the tendon curled the finger; releasing it let the printed flexures restore a straighter shape. This tested whether the mechanism could turn a small pull into useful joint motion."
+      },
+      {
+        "title": "What the demonstration shows",
+        "text": "The electrical SMA-actuator experiment and the printed-finger test were separate parts of the assignment. In the finger video, the tendon is pulled manually to simulate SMA contraction. The report documents muscle-triggered operation of the bendable SMA actuator separately. Together, the experiments connected biosignal conditioning, thermal actuator control and prosthetic mechanism design, while showing why cooling time and limited actuator travel constrain the design."
       }
     ],
     "image": "/gallery/finger-prototype.webp",
     "imageAlt": "The printed finger prototype in the laboratory.",
     "video": {
-      "src": "/media/finger-actuation.mp4",
-      "caption": "Laboratory actuation video of the finger mechanism.",
+      "src": "/media/finger-actuation.mp4?v=2",
+      "caption": "Tendon-driven finger demonstration: a manual wire pull simulates SMA contraction, curling the printed finger before it returns on release.",
       "poster": "/gallery/finger-prototype.webp"
     },
     "featured": true

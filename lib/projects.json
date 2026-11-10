@@ -5,15 +5,33 @@
     "eyebrow": "Autonomous lawn mower",
     "category": "robotics",
     "year": "2026",
-    "summary": "Computer vision, coverage planning, and layered safety for a boundary-free autonomous lawn mower.",
+    "summary": "Python and YOLOv8 perception for a ROS-based autonomous mower, with Roboflow data preparation, PyTorch training, and Gazebo/RViz simulation.",
     "role": "AI & perception lead · multidisciplinary capstone team",
     "status": "Capstone completed",
     "tools": [
-      "YOLOv8",
+      "Python",
+      "Ultralytics YOLOv8",
+      "YOLOv8n-seg",
       "PyTorch",
-      "ROS",
       "OpenCV",
-      "Jetson Nano"
+      "Roboflow",
+      "ROS 1 Noetic",
+      "ROS 2",
+      "Gazebo",
+      "RViz",
+      "ONNX",
+      "Jetson Nano",
+      "Arduino Mega",
+      "LiDAR",
+      "SLAM",
+      "gmapping",
+      "robot_localization",
+      "Extended Kalman Filter (EKF)",
+      "Occupancy grids",
+      "A* path planning",
+      "Coverage planning",
+      "URDF",
+      "Git"
     ],
     "color": "paper",
     "image": "/gallery/mower-prototype.webp",
@@ -48,6 +66,10 @@
       {
         "title": "Results and limits",
         "text": "The recorded validation scores are 0.764 box mAP50 and 0.745 mask mAP50. The team earned an Honourable Mention at Engineering Design Day. Perception was used alongside independent safety checks; these validation scores do not measure the safety or field coverage of the complete robot."
+      },
+      {
+        "title": "Perception, simulation and integration",
+        "text": "I prepared and labeled vision data in Roboflow and trained Ultralytics YOLOv8 detection and segmentation models with PyTorch. Python and OpenCV supported image processing and the ROS perception interfaces. The team’s ROS pipeline connected occupancy-grid mapping, sensor fusion, coverage planning and motion control; Gazebo and RViz provided simulation and visualization. The repository contains ROS 1 Noetic and ROS 2 development artifacts, while the documented final pipeline uses ROS 1. The browser demonstration runs the exported ONNX segmentation model. The hardware architecture pairs a Jetson Nano with an Arduino Mega; individual model validation and simulation results are distinct from complete outdoor robot validation."
       }
     ],
     "links": [
@@ -106,15 +128,26 @@
     "eyebrow": "Miniature C-arm surgical simulator",
     "category": "biomedical",
     "year": "2025",
-    "summary": "A scaled mechanical training prototype integrating CAD, printed parts, stepper motors, and orientation sensing.",
+    "summary": "A SolidWorks and PLA-printed C-arm prototype using Arduino C++, AccelStepper, A4988 motor drivers, and Bluetooth-to-3D Slicer integration.",
     "role": "Team project · sensors and actuators",
     "status": "Prototype",
     "tools": [
       "SolidWorks",
-      "3D printing",
-      "Embedded C",
-      "Stepper motors",
-      "IMU"
+      "CAD assemblies",
+      "PLA 3D printing",
+      "Arduino Uno",
+      "Arduino C++",
+      "AccelStepper",
+      "28BYJ-48 stepper motors",
+      "A4988 drivers",
+      "Breadboard prototyping",
+      "Bluetooth",
+      "BWT61CL orientation sensor",
+      "MPU6050",
+      "IMU",
+      "3D Slicer",
+      "PLUS Server",
+      "Step/direction control"
     ],
     "color": "paper",
     "sections": [
@@ -129,6 +162,10 @@
       {
         "title": "What it demonstrates",
         "text": "The work shows integration across mechanical design, sensing, actuation, and firmware. It is a training-oriented motion prototype rather than an X-ray imaging system."
+      },
+      {
+        "title": "Mechanical, embedded and visualization tools",
+        "text": "Our team modeled the C-arm and surgical table in SolidWorks and fabricated the mechanism using PLA 3D printing. An Arduino Uno ran Arduino C++ with AccelStepper to control converted 28BYJ-48 motors through A4988 stepper drivers. Pushbuttons commanded translation and rotation; software travel limits and a shared enable line controlled movement and idle power. We worked with Bluetooth orientation sensing and the PLUS Server / 3D Slicer visualization chain. The report also records sensor communication and virtual-motion failures during later testing, so this was an integration prototype with unresolved reliability issues."
       }
     ],
     "id": "P02",
@@ -164,16 +201,24 @@
     "eyebrow": "Smart wheelchair navigation",
     "category": "robotics",
     "year": "2025",
-    "summary": "An indoor mobile-robot prototype exploring room navigation, hazard awareness, and arrival verification for wheelchair assistance.",
+    "summary": "ROS 2 / Nav2 indoor robot navigation with LiDAR mapping, Python/OpenCV hazard detection, and pyzbar barcode arrival checks.",
     "role": "Team course project · AISE 4020",
     "status": "Prototype",
     "tools": [
+      "Python",
       "ROS 2",
       "Nav2",
-      "Python",
       "OpenCV",
+      "pyzbar",
       "LiDAR",
-      "A*"
+      "SLAM",
+      "Occupancy-grid mapping",
+      "HSV color segmentation",
+      "QR-code recognition",
+      "Barcode detection",
+      "Yahboom Pi5",
+      "A* path planning",
+      "Obstacle avoidance"
     ],
     "color": "paper",
     "sections": [
@@ -188,6 +233,10 @@
       {
         "title": "Testing and iteration",
         "text": "Detector recalibration improved previously unsuccessful hazard and furniture tests. Obstacle avoidance remained partially successful, and the prototype could stall at a checkpoint if no barcode appeared. These limitations make the next steps clear: stronger recovery behavior and more robust arrival handling."
+      },
+      {
+        "title": "Mapping, perception and arrival checks",
+        "text": "We used the Yahboom Pi5 robot, LiDAR mapping and the ROS 2 / Nav2 navigation stack to explore movement through a physical mock home. My perception work used Python and OpenCV: HSV color segmentation identified red-tape hazard zones, while color and shape cues supplied furniture context. pyzbar supported barcode and QR-code recognition as a separate room-arrival check. Testing exposed both detector calibration problems and a navigation checkpoint that could stall when a barcode was missing; the project documents those limitations alongside the successful perception tests."
       }
     ],
     "id": "P04",
@@ -228,14 +277,22 @@
     "eyebrow": "Neonatal phototherapy blanket",
     "category": "biomedical",
     "year": "2026",
-    "summary": "A course design study for a low-cost neonatal phototherapy blanket intended for resource-constrained settings.",
+    "summary": "A SolidWorks medical-device design study combining fiber-optic light delivery, LED-driver selection, thermal analysis, and optical power budgeting.",
     "role": "Medical and assistive devices course project · MME 4470",
     "status": "Design study",
     "tools": [
-      "Medical device design",
-      "Requirements",
-      "Engineering analysis",
-      "Technical reporting"
+      "SolidWorks",
+      "CAD",
+      "Fiber-optic light delivery",
+      "COB5730 blue LEDs",
+      "CN5711 constant-current drivers",
+      "PWM dimming",
+      "18650 battery power",
+      "Thermal analysis",
+      "Optical power budgeting",
+      "Quality Function Deployment (QFD)",
+      "Weighted decision matrix",
+      "Medical device requirements"
     ],
     "color": "paper",
     "sections": [
@@ -250,6 +307,10 @@
       {
         "title": "Scope",
         "text": "This is a student design study. It is not a clinically validated device, and the portfolio does not claim a treatment outcome."
+      },
+      {
+        "title": "Design tools and proposed hardware",
+        "text": "This was a medical-device design study supported by SolidWorks CAD, requirements analysis, Quality Function Deployment and a weighted concept-selection matrix. The selected concept separated a blue-LED engine from a fiber-optic treatment pad to reduce direct heat exposure. The proposed electronics used COB5730 LEDs, CN5711 constant-current PWM drivers and an 18650 battery supply. Optical power budgeting, runtime calculations and thermal analysis informed the design. These components describe the proposed architecture and engineering analysis, rather than a clinically validated or manufactured device."
       }
     ],
     "id": "P05",
@@ -281,15 +342,27 @@
     "eyebrow": "Gem-sorting rover — Scooper Bot 10001",
     "category": "robotics",
     "year": "2024",
-    "summary": "A constrained autonomous rover project combining pickup mechanics, color sensing, motor feedback, and sorting.",
+    "summary": "An ESP32-S3 rover combining Arduino C++, PID wheel control, encoder feedback, TCS34725 color sensing, and 3D-printed sorting mechanisms.",
     "role": "Team project · MSE 2202",
     "status": "Prototype",
     "tools": [
+      "SolidWorks",
+      "CAD",
+      "3D printing",
       "ESP32-S3",
       "Arduino C++",
-      "PID",
-      "TCS34725",
-      "SolidWorks"
+      "Arduino IDE",
+      "MSE2202_Lib",
+      "PID control",
+      "Quadrature encoders",
+      "Adafruit TCS34725",
+      "Color sensing",
+      "NeoPixel",
+      "Servo motors",
+      "DC gearmotors",
+      "Infrared beacon",
+      "Breadboard prototyping",
+      "Git"
     ],
     "color": "paper",
     "image": "/gallery/scooper-assembly.webp",
@@ -306,6 +379,10 @@
       {
         "title": "Results and limitations",
         "text": "The report describes pickup and color-sorting success, with return-to-base behavior limited by IR-beacon localization. This made sensing reliability and recovery an important part of the final analysis."
+      },
+      {
+        "title": "Mechanics, sensing and embedded control",
+        "text": "The rover combined SolidWorks-designed and 3D-printed pickup and sorting mechanisms with ESP32-S3 Arduino C++ firmware. The MSE2202 library supported motor control and encoder feedback; PID control addressed wheel positioning. A TCS34725 color sensor distinguished gems inside a light-isolated sorting chamber, with servo-actuated collection and sorting hardware. Infrared-beacon homing and wheel traction were practical limitations during testing. This was a team build spanning mechanical design, sensor integration and embedded control."
       }
     ],
     "id": "P06",
@@ -357,12 +434,16 @@
         "kind": "image"
       }
     ],
-    "summary": "A printed finger mechanism with a shape-memory-alloy actuation investigation.",
+    "summary": "A SolidWorks-designed, 3D-printed finger mechanism investigated through shape-memory-alloy actuation, circuit prototyping, and laboratory motion tests.",
     "tools": [
       "SolidWorks",
+      "CAD",
+      "Dimensioned engineering drawings",
       "3D printing",
-      "SMA actuation",
-      "Circuit testing"
+      "Shape-memory alloy (SMA)",
+      "Actuator characterization",
+      "Circuit prototyping",
+      "Laboratory testing"
     ],
     "sections": [
       {
@@ -372,6 +453,10 @@
       {
         "title": "Engineering work",
         "text": "The submitted work includes a dimensioned drawing and device analysis connecting actuator behavior to the finger mechanism. The video below records the laboratory demonstration."
+      },
+      {
+        "title": "Design and laboratory workflow",
+        "text": "The work connected a dimensioned mechanical drawing and SolidWorks model with printed finger components, a shape-memory-alloy actuation investigation and a laboratory circuit. Fabrication and circuit testing were used to investigate how actuator behavior translated into finger motion. The photographs and recorded demonstration show the physical mechanism and test setup; the project is presented as a laboratory prototype."
       }
     ],
     "image": "/gallery/finger-prototype.webp",
@@ -427,10 +512,16 @@
     "role": "Research intern · KAUST",
     "status": "Research internship",
     "tools": [
-      "Liquid crystal elastomers",
-      "3D printing",
-      "Experimental testing",
-      "Soft robotics"
+      "Liquid crystal elastomers (LCE)",
+      "Soft robotics",
+      "Direct ink writing (DIW)",
+      "Syringe extrusion printing",
+      "Polymer formulation",
+      "Casting",
+      "Laser cutting",
+      "Thermal actuation",
+      "Load-lifting experiments",
+      "Solar-tracker demonstrator"
     ],
     "color": "paper",
     "sections": [
@@ -449,6 +540,10 @@
       {
         "title": "Thermal response and coatings",
         "text": "I investigated conductive layers and light-absorbing treatments as ways to alter the thermal response. I compared coated and uncoated strips, tracked their heating and cooling behavior, and recorded changes in shape and length under heat and sunlight. The observations helped distinguish contraction, bending, and recovery, while identifying which coating and fabrication choices needed further testing."
+      },
+      {
+        "title": "Fabrication and characterization methods",
+        "text": "My experimental work combined polymer preparation and casting with syringe-based direct ink writing, laser-cut sample preparation and heat-responsive actuation tests. I investigated how material preparation and fabrication affected movement, tested load lifting, and contributed to a solar-cell demonstrator. The report records iterative material and fabrication work; proposed integrated sensing and heater concepts are separate from the experimental demonstrations shown here."
       }
     ],
     "id": "P10",
@@ -494,7 +589,7 @@
     "eyebrow": "Household energy forecasting",
     "category": "robotics",
     "year": "2024",
-    "summary": "Feature engineering and deep sequence models for forecasting household electricity use from smart-meter data.",
+    "summary": "TensorFlow/Keras LSTM forecasting of household electricity use, with pandas/NumPy preprocessing, engineered energy features, and time-series windowing.",
     "role": "Group project · preprocessing, features, and LSTM development",
     "status": "Course project",
     "tools": [
@@ -502,7 +597,17 @@
       "TensorFlow",
       "Keras",
       "pandas",
-      "LSTM"
+      "NumPy",
+      "scikit-learn",
+      "Google Colab",
+      "LSTM",
+      "Dense neural networks",
+      "Dropout",
+      "Time-series windowing",
+      "Feature engineering",
+      "MAE",
+      "MSE",
+      "R-squared"
     ],
     "color": "paper",
     "metrics": [
@@ -527,6 +632,10 @@
       {
         "title": "Results in context",
         "text": "The report records a final test R² of 0.65 and MAE of 1.07 on the project’s target scale. Earlier model attempts performed poorly, making iterative diagnosis a central part of the work. Related assignments compared ARIMA, MLP, CNN, RNN, LSTM, GRU, TCN, and Transformer-based approaches across separate datasets."
+      },
+      {
+        "title": "Data preparation and sequence-model development",
+        "text": "I worked on preprocessing and engineered features for the group’s household electricity forecasting project. pandas and NumPy supported time-indexed data preparation and calculations such as power factor and global active energy. TensorFlow / Keras implemented sliding-window LSTM models with Dense layers and dropout, trained in Google Colab. We iterated on window length and network structure, then compared predictions and training/validation behavior using MSE, MAE and R-squared. scikit-learn supported the surrounding preprocessing and evaluation workflow."
       }
     ],
     "id": "P11",
@@ -558,15 +667,31 @@
     "eyebrow": "Machine-learning fairness and differential privacy",
     "category": "robotics",
     "year": "2025",
-    "summary": "A series of labs auditing group disparities and exploring mitigation, causal analysis, and the privacy–accuracy tradeoff.",
+    "summary": "Python coursework using AIF360, fairlearn, DoWhy, diffprivlib, TensorFlow, and scikit-learn to investigate fairness, causality, and privacy tradeoffs.",
     "role": "Individual lab sequence · AISE 3020",
     "status": "Coursework",
     "tools": [
       "Python",
-      "fairlearn",
+      "pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
       "AIF360",
+      "fairlearn",
+      "TensorFlow",
       "DoWhy",
-      "diffprivlib"
+      "statsmodels",
+      "diffprivlib",
+      "Google Colab",
+      "Logistic regression",
+      "Linear regression",
+      "StandardScaler",
+      "COMPAS",
+      "Demographic parity",
+      "Adversarial debiasing",
+      "Exponentiated Gradient Reduction",
+      "Differential privacy",
+      "Causal inference"
     ],
     "color": "paper",
     "sections": [
@@ -577,6 +702,10 @@
       {
         "title": "The lab sequence",
         "text": "I examined classification disparities in COMPAS data, explored fairness interventions, built causal-analysis exercises, and tested differentially private regression models. The labs connect evaluation choices with explicit assumptions about fairness and privacy."
+      },
+      {
+        "title": "Libraries and analysis workflow",
+        "text": "The lab sequence used pandas / NumPy and scikit-learn for data preparation, classification and evaluation, with Matplotlib for result plots. AIF360 and fairlearn supported group-fairness metrics and mitigation experiments, including Exponentiated Gradient Reduction and adversarial debiasing with TensorFlow. DoWhy supported causal modeling and refutation checks. In the privacy work, diffprivlib linear and logistic regression models were compared with scikit-learn baselines across privacy-budget settings. These were coursework investigations of tradeoffs, rather than a deployed decision system."
       }
     ],
     "id": "P14",
@@ -627,12 +756,21 @@
         "caption": "Original SQL view grouping dealerships with their regions and popularity scores."
       }
     ],
-    "summary": "A relational database project for a multi-dealership vehicle marketplace, developed from requirements and entity modeling through SQL queries and views.",
+    "summary": "A MySQL vehicle-marketplace database with ER modeling, relational constraints, SQL queries and views, and a React/Next.js web application.",
     "tools": [
       "SQL",
       "MySQL",
-      "Database design",
-      "Web development"
+      "Relational database design",
+      "Entity-relationship diagrams (ERD)",
+      "Primary and foreign keys",
+      "SQL JOINs",
+      "GROUP BY",
+      "Aggregate queries",
+      "SQL views",
+      "React",
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS"
     ],
     "sections": [
       {
@@ -650,6 +788,10 @@
       {
         "title": "SQL implementation and outputs",
         "text": "The project files include table-creation scripts, sample vehicle and dealership data, a MySQL database export, update and deletion exercises, and database views. The original screenshots show a conditional vehicle-price update and a dealership-popularity view that groups dealership information with click counts. A Next.js front-end scaffold is also present; the main demonstrated deliverable here is the database and its SQL outputs."
+      },
+      {
+        "title": "Database and web application stack",
+        "text": "The team project translated vehicle-marketplace requirements into an entity-relationship model and a MySQL relational schema. SQL scripts populated customer, vehicle, dealership and user records, then exercised joins, aggregation, grouping and database views. The accompanying web application used React and Next.js with Tailwind CSS. My documented contribution focused on requirements and functionality specification; the schema, query outputs and web code describe the wider team implementation."
       }
     ],
     "featured": true,
@@ -662,14 +804,22 @@
     "eyebrow": "Six-axis robot arm kinematics and path planning",
     "category": "robotics",
     "year": "2025",
-    "summary": "Forward and inverse kinematics, Jacobians, and potential-field path planning for a six-axis manipulator.",
+    "summary": "MATLAB kinematics and potential-field motion planning for a six-axis manipulator, using DH parameters, Jacobians, and obstacle-avoidance parameter sweeps.",
     "role": "Partner course project · MSE 4401",
     "status": "Course project",
     "tools": [
       "MATLAB",
       "Simulink",
-      "Kinematics",
-      "Path planning"
+      "Forward kinematics",
+      "Inverse kinematics",
+      "Denavit–Hartenberg parameters",
+      "Jacobian matrices",
+      "Jacobian-transpose control",
+      "Artificial potential fields",
+      "Obstacle avoidance",
+      "Joint-space trajectories",
+      "Parameter sweeps",
+      "6-DOF manipulators"
     ],
     "color": "paper",
     "sections": [
@@ -684,6 +834,10 @@
       {
         "title": "Limits and related work",
         "text": "Representative planned paths avoided modeled spherical obstacles. The point-mass approximation and local minima limit what the simulation establishes. Related Baxter labs explored PID and computed-torque control on a seven-axis robot."
+      },
+      {
+        "title": "Analytical modeling and planner implementation",
+        "text": "We developed a MATLAB kinematic model for a six-axis serial manipulator, using Denavit–Hartenberg parameters, forward and inverse kinematics, and Jacobian calculations. The potential-field planner combined attraction toward the target with repulsion from spherical obstacles; a Jacobian-transpose mapping converted Cartesian motion into joint updates. Parameter sweeps examined path curvature, obstacle influence and convergence across representative tasks. Simulink formed part of the broader manipulator modeling and control coursework; the figures on this page document the kinematic and planning study."
       }
     ],
     "id": "P23",
@@ -738,11 +892,18 @@
         "caption": "The team’s controller-law overlay on the modeled exercise condition."
       }
     ],
-    "summary": "A MATLAB study of how ventricular assistance changes cardiac flow, pressure, and workload, followed by a physiologically responsive LVAD control investigation.",
+    "summary": "MATLAB cardiovascular and LVAD simulations using Windkessel and elastance models, pressure–volume analysis, and physiological feedback-control investigations.",
     "tools": [
       "MATLAB",
-      "LVAD models",
-      "Cardiovascular simulation"
+      "Cardiovascular modeling",
+      "LVAD simulation",
+      "Windkessel models",
+      "Time-varying elastance",
+      "Pressure–volume loops",
+      "Pressure and flow waveforms",
+      "Batch simulation",
+      "Physiological feedback control",
+      "Parameter sweeps"
     ],
     "sections": [
       {
@@ -760,6 +921,10 @@
       {
         "title": "Interpreting the model",
         "text": "The report compares the model’s baseline filling-pressure behavior with a reference example and discusses the consequences of that mismatch. The investigation treats the outputs as simulation results: the simplified circulation, fixed parameters, and limited physiological feedback restrict how far the controller findings can be generalized."
+      },
+      {
+        "title": "Simulation and physiological interpretation",
+        "text": "I used MATLAB scripts to investigate ventricular assistance by varying pump flow and comparing pressure, flow and ventricular-volume waveforms. The supplied cardiovascular model uses a Windkessel representation and time-varying ventricular elastance. Batch runs and pressure–volume analysis helped explain how increasing LVAD support changes the ventricle’s contribution to circulation. A subsequent control investigation related pump flow to end-diastolic pressure, keeping the model’s simplifications and validation limits explicit."
       }
     ],
     "featured": true,
@@ -787,11 +952,15 @@
         "caption": "Original overlay of membrane responses after fixed-tilt parameters were matched to the selected phase durations."
       }
     ],
-    "summary": "A MATLAB investigation of how biphasic shock timing and waveform tilt change the modeled source voltage and cardiac-cell membrane response.",
+    "summary": "MATLAB modeling of biphasic exponential shocks and cardiac membrane response, exploring waveform tilt, phase timing, and pulse duration.",
     "tools": [
       "MATLAB",
-      "Waveform analysis",
-      "Biomedical control"
+      "Biphasic exponential waveforms",
+      "Cardiac membrane modeling",
+      "Waveform tilt",
+      "Pulse-duration tuning",
+      "Parameter sweeps",
+      "Voltage-response visualization"
     ],
     "sections": [
       {
@@ -809,6 +978,10 @@
       {
         "title": "Project scope",
         "text": "The deliverables were MATLAB calculations, waveform overlays, and a written interpretation of the electrical model. These are educational simulation results rather than device testing or clinical validation."
+      },
+      {
+        "title": "Waveform construction and response analysis",
+        "text": "The MATLAB study constructed biphasic exponential source waveforms and examined their modeled cardiac-cell membrane response. I investigated waveform tilt, phase duration and timing, using response plots and parameter comparisons to explain how a change at the source altered membrane voltage. The report figures distinguish the applied shock waveform from the modeled membrane response; the analysis does not establish a clinical defibrillation protocol."
       }
     ],
     "featured": true,
@@ -832,11 +1005,13 @@
         "caption": "A page from my emerging-opportunity report outlining the proposed product ecosystem."
       }
     ],
-    "summary": "An emerging-opportunity report examining an AI-enabled ECG wearable concept.",
+    "summary": "A Lean Canvas and healthcare opportunity study for an AI-enabled ECG wearable, covering users, value proposition, and the proposed product ecosystem.",
     "tools": [
       "Opportunity analysis",
       "Lean Canvas",
-      "Healthcare technology"
+      "Healthcare market research",
+      "Value proposition design",
+      "Stakeholder analysis"
     ],
     "sections": [
       {
@@ -846,6 +1021,10 @@
       {
         "title": "Scope",
         "text": "The deliverable is an opportunity and business-model study. It does not claim that a clinical device or diagnostic model was built."
+      },
+      {
+        "title": "Research and business-model methods",
+        "text": "I used an emerging-opportunity report and Lean Canvas to examine an AI-enabled ECG wearable concept: the intended users, clinical need, value proposition and proposed product ecosystem. The work concerns opportunity assessment and business-model development; it does not claim implementation or validation of an ECG machine-learning model."
       }
     ],
     "featured": true,
@@ -883,10 +1062,13 @@
         "caption": "Original FarmerConnect app screen mockup."
       }
     ],
-    "summary": "A venture concept developed through a business plan, pitch, and Lean Canvas.",
+    "summary": "A FarmerConnect venture plan and PowerPoint pitch supported by a Lean Canvas, market research, and app-interface mockups.",
     "tools": [
-      "Business models",
-      "Entrepreneurship",
+      "Microsoft PowerPoint",
+      "Business planning",
+      "Lean Canvas",
+      "Value proposition design",
+      "Market research",
       "Pitch development"
     ],
     "sections": [
@@ -897,6 +1079,10 @@
       {
         "title": "Design and planning work",
         "text": "The original app mockups show a produce-discovery homepage, search and filtering controls, favorites, messages, a shopping basket, and notifications. These screens are design concepts accompanying the business plan rather than a deployed marketplace."
+      },
+      {
+        "title": "Business plan and communication",
+        "text": "The team developed FarmerConnect through a business plan, Lean Canvas and PowerPoint pitch. The materials explain the proposed customer problem, target users, value proposition and operating model, supported by app-interface mockups. These are venture-planning and communication deliverables rather than evidence of an operated marketplace."
       }
     ],
     "featured": true,
@@ -926,11 +1112,14 @@
         "caption": "Original AutoPicker consulting presentation title slide."
       }
     ],
-    "summary": "A team consulting presentation applying business-strategy analysis.",
+    "summary": "A team consulting presentation applying SWOT and external-market analysis to AutoPicker’s vehicle-service business proposition.",
     "tools": [
-      "Strategy",
-      "Consulting",
-      "Presentation"
+      "Microsoft PowerPoint",
+      "SWOT analysis",
+      "External environment analysis",
+      "Business strategy",
+      "Market analysis",
+      "Consulting presentations"
     ],
     "sections": [
       {
@@ -940,6 +1129,10 @@
       {
         "title": "Analysis and recommendations",
         "text": "The presentation used internal capability assessment, VRIO, and SWOT analysis to connect the business model with practical recommendations. We proposed clarifying the operating model, developing more independent internal systems, and considering partnerships with garages to connect existing customer trust with AutoPicker’s technology."
+      },
+      {
+        "title": "Consulting methods and deliverables",
+        "text": "Our consulting presentation examined AutoPicker’s vehicle-service proposition, target market and external environment. We used SWOT and market analysis to organize strengths, weaknesses, opportunities and threats, then communicated the team’s findings and recommendations in a PowerPoint presentation."
       }
     ],
     "featured": true,
@@ -990,15 +1183,20 @@
         "caption": "Six-servo Arduino wiring simulation with an external power supply."
       }
     ],
-    "summary": "Robot fabrication, computer vision, speech interfaces, and web development completed during my engineering internship.",
+    "summary": "Smart Methods internship work spanning SolidWorks/STL fabrication, servo mechanisms, Python/OpenCV interfaces, JavaScript web work, and speech-to-text prototypes.",
     "tools": [
       "SolidWorks",
+      "CAD assemblies",
+      "STL",
       "3D printing",
-      "Servos",
+      "Servo motors",
+      "Circuit prototyping",
       "Python",
       "OpenCV",
       "JavaScript",
-      "Web development"
+      "Speech-to-text",
+      "Web development",
+      "Robot-arm simulation"
     ],
     "sections": [
       {
@@ -1012,6 +1210,10 @@
       {
         "title": "Web development and integration",
         "text": "I also worked on web interfaces and API integration across internship tasks. The projects combined mechanical, electronics, AI, and software work within one engineering internship."
+      },
+      {
+        "title": "Mechanical and software internship work",
+        "text": "My internship work covered SolidWorks robot-component design, STL preparation, 3D printing, servo mechanisms and control-circuit prototyping. The software work included Python / OpenCV vision interfaces, JavaScript web interfaces and a speech-to-text prototype. The page combines the original fabrication, simulation and interface material from these activities. Supplied training decks and upstream example packages are reference material, so their complete technology stacks are not presented as tools I independently implemented."
       }
     ],
     "image": "/gallery/smart-methods-robot.webp",
